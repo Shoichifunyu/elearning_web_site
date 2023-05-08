@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunyuSpace!!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script>
+      const correct_modal = document.getElementById('.correct-js-modal');
+      const incorrect_modal = document.getElementById('.incorrect-js-modal');
+      const buttonOpen = document.getElementById('modalOpen');
+
+      // 追記
+      const modalClose = document.querySelector('.js-close-button');　// xボタンのjs-close-buttonを取得し変数に格納
+
+      // buttonOpen.addEventListener('click', modalOpen);
+      //   function ansMachine01(){
+      //         let select = document.getElementById('select01').value;
+      //         if (select == 'value01') {
+      //           correct_modal.classList.add('is-open');
+      //           modalClose.addEventListener('click', () => { // xボタンをクリックしたときのイベントを登録
+      //             correct_modal.classList.remove('is-open'); 
+      //           });
+      //         } else {
+      //           incorrect_modal.classList.add('is-open');
+      //           modalClose.addEventListener('click', () => { // xボタンをクリックしたときのイベントを登録
+      //             incorrect_modal.classList.remove('is-open'); 
+      //           });
+      //         }
+      //   }
+      //   var exampleModal = document.getElementById('exampleModal')
+      //   if (exampleModal){
+      //   exampleModal.addEventListener('show.bs.modal', function (event) {
+      //     // Button that triggered the modal
+      //     var button = event.relatedTarget
+      //     // Extract info from data-bs-* attributes
+      //     var recipient = button.getAttribute('data-bs-whatever')
+      //     // If necessary, you could initiate an AJAX request here
+      //     // and then do the updating in a callback.
+      //     //
+      //     // Update the modal's content.
+      //     var modalTitle = exampleModal.querySelector('.modal-title')
+      //     var modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+      //     modalTitle.textContent = 'New message to ' + recipient
+      //     modalBodyInput.value = recipient
+      //   })
+      // }
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="sidebarMenu">
+            <ul class="navbar-nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="./learn_aws.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  <span class="ml-2">目次</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./learn_aws_contents_one.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  <span class="ml-2">学習①</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./learn_aws_tests_one.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  <span class="ml-2">テスト①</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./learn_aws_contents_two.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  <span class="ml-2">学習②</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./learn_aws_tests_two.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  <span class="ml-2">テスト②</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./construction_view.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  <span class="ml-2">学習③</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./construction_view.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  <span class="ml-2">テスト③</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        </div>
+        <div class="col-md-9">
+            <h2>テスト</h2>
+            <p>それではテストです。</p>
+            <h4>テスト①</h4>
+            <p>デフォルトで一つのリージョンに作成できるVPCの上限数は次のうちいくつか？</p>
+            <select id="select01">
+              <option value="value01">5</option>
+              <option value="value02">10</option>
+              <option value="value03">50</option>
+              <option value="value04">100</option>
+            </select>
+                <!-- モーダルウィンドウを起動するボタン -->
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL1">正解</button><br>
+
+            <!-- ここからモーダル -->
+            <div class="modal fade" id="MODAL1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                      正解：5
+                  </div>
+                  <div class="modal-body">
+                    デフォルトの制限は、１リージョンあたり 5 VPCとなります。
+                    ただし、AWSへ専用フォームからリクエストすれば、ニーズに応じてリージョンあたり 100 個の VPC を持つことができます。
+                  </div>
+
+                </div> <!-- modal-content -->
+              </div>  <!-- modal-dialog -->
+            </div>  <!-- modal fade -->
+            <br>
+            <h4>テスト②</h4>
+            <p>グローバルイベントの主催者は、日次レポートを静的なHTMLページとしてオンラインに配置したいと考えています。このページは、世界中のユーザーから何百万ものビューを生成すると予想されています。ファイルはAmazon S3バケットに保存されます。ソリューションアーキテクトは、効率的で効果的なソリューションを設計するように求められています。</p>
+            <p>これを達成するためにソリューションアーキテクトはどのアクションを実行する必要がありますか？</p>
+            <select id="select02">
+              <option value="value01">ファイルの署名付きURLを生成する</option>
+              <option value="value02">すべてのリージョンに対してクロスリージョンレプリケーションを使用する</option>
+              <option value="value03">Amazon Route 53の地理的近接性ルーティングを使用する</option>
+              <option value="value04">S3バケットをオリジンとしてAmazon CloudFrontを使用する</option>
+            </select>
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL2">正解</button><br>
+
+            <div class="modal fade" id="MODAL2">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                      正解：S3バケットをオリジンとしてAmazon CloudFrontを使用する
+                  </div>
+                  <div class="modal-body">
+                    <p></p>問題文に世界中のユーザが利用となるので、CloudFrontを使用するのが正解となります。</p>
+                    <p>Amazon CloudFront は、データ、動画、アプリケーション、および API をすべてデベロッパーにとって使いやすい環境で、低レイテンシーの高速転送により世界中の視聴者に安全に配信する高速コンテンツ配信ネットワーク (CDN) サービスです。</p>
+                  </div>
+
+                </div> <!-- modal-content -->
+              </div>  <!-- modal-dialog -->
+            </div>  <!-- modal fade -->
+            <br>
+            <h4>テスト③</h4>
+            <p>AWSにおける可用性向上策として間違っているものは次のうちどれですか？</p>
+            <select id="select02">
+              <option value="value01">リソースを冗長化する</option>
+              <option value="value02">地理的に離れた場所で冗長化する</option>
+              <option value="value03">システムを疎結合で構築する</option>
+              <option value="value04">ステートレスな設計とする</option>
+            </select>
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL3">正解</button><br>
+
+            <div class="modal fade" id="MODAL3">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                      正解：ステートレスな設計とする
+                  </div>
+                  <div class="modal-body">
+                    <p>ステートレスやステートフルは状態管理のアーキテクチャであり、可用性とは無関係となります。</p>
+                  </div>
+
+                </div> <!-- modal-content -->
+              </div>  <!-- modal-dialog -->
+            </div>  <!-- modal fade -->
+            <br>
+            <h4>テスト④</h4>
+            <p>S3に関する説明として正しいものは次のうちどれですか？</p>
+            <select id="select02">
+              <option value="value01">削除されたデータは、参照タイミングにかかわらずデータを参照されることはない</option>
+              <option value="value02">S3で更新されたデータは一貫性が保証されている</option>
+              <option value="value03">更新されたデータは即座に更新データをGETで参照できる</option>
+              <option value="value04">S3に新規追加されたデータは、参照タイミングによらず一貫性が担保されている</option>
+            </select>
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL4">正解</button><br>
+
+            <div class="modal fade" id="MODAL4">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                      正解：S3に新規追加されたデータは、参照タイミングによらず一貫性が担保されている
+                  </div>
+                  <div class="modal-body">
+                    <p>S3の新規追加は、書き込み後の読み込み整合性は担保されているため、参照タイミングによらず、一貫性が保証される。</p>
+                    <p>S3の削除は、結果整合性のため、参照タイミングによっては削除前のデータが参照される場合がある</p>
+                    <p>S3の更新は、結果整合性のため、参照タイミングによっては更新前のデータが参照される場合がある</p>
+                  </div>
+
+                </div> <!-- modal-content -->
+              </div>  <!-- modal-dialog -->
+            </div>  <!-- modal fade -->
+            <p>参考サイト</p>
+            <a href="https://aws-exam.net/saa/">https://aws-exam.net/saa</a>
+        </div>
+    </div>
+  </div>
+  </body>

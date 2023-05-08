@@ -23,18 +23,15 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-light bg-light p-3">
-    <div class="d-flex col-12 col-md-3 col-lg-2 mb-2 mb-lg-0 flex-wrap flex-md-nowrap justify-content-between">
-        <a class="navbar-brand" href="#">
-            HTML
-        </a>
-    </div>
-    </nav>
-    <div class="container-fluid">
-    <div class="row">
-        <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-          <div class="position-sticky pt-md-5">
-            <ul class="nav flex-column">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="sidebarMenu">
+            <ul class="navbar-nav flex-column">
               <li class="nav-item">
                 <a class="nav-link" href="./learn_html.html">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
@@ -80,7 +77,8 @@
             </ul>
           </div>
         </nav>
-        <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-4">
+        </div>
+        <div class="col-md-9">
             <h2>テスト①</h2>
             <p>それでは、テストです。</p>
             <h4>基本（知識編）</h4>
@@ -100,7 +98,7 @@
               <option value="value04">タグ</option>
             </select>
             <button type="button" name="button01" onclick=ansMachine01()>回答</button>
-        </main>
+          </div>
     </div>
     </div>
 
