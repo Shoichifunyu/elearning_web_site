@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunyuSpace!!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="sidebarMenu">
+            <ul class="navbar-nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="./blog.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  <span class="ml-2">目次</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog_one.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  <span class="ml-2">ブログ①</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog_two.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  <span class="ml-2">ブログ②</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog_three.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  <span class="ml-2">ブログ③</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        </div>
+        <div class="col-md-9">
+            <h1 class="h2">ブログ</h1>
+            <h4>WEB開発とは</h4>
+            <p>自身のキャリアを考えるきっかけにもなった「WEB開発」</p>
+            <p>ただ、自身でもどれだけWEB開発を理解しているか疑問が多い</p>
+            <p>そこで、今日はWEB開発について、調べて分かったことをまとめていきたいと思う</p>
+            <h4>フロントエンドに最適なWebアプリ開発フレームワークトップ5に知らないフレームワークがある</h4>
+            <p>React、Angular、Vueは知っていた（Angularは名前だけ）</p>
+            <p>Ember、Backboneは知らない</p>
+            <p>そこで、Ember、Backboneについて軽く調べてみようと思う</p>
+            <h4>Ember</h4>
+            <p>幾多のクライアントサイドMVCフレームワークのひとつで、表面的にはRails臭がするが、中身はガチのMVCであり、データバインディングやコンポーネントなどの機能を提供しているよう</p>
+            <h6>Emberの概念</h6>
+            <p>Template</p>
+            <p>Templateはユーザインターフェイスとしてユーザに表示されるHTMLの定義。Ember.jsではHandlebarsというテンプレート言語を利用してTemplateを記述する</p>
+            <p>Templateは、Modelと関連付いており、Modelのプロパティなどをレンダリングする。例えば、ユーザModelが関連付いているTemplateはこんな記述となる</p>
+            <code>
+              &lt;script type="text/x-handlebars"&gt;<br>
+              &nbsp;&nbsp;&lt;p&gt;Name: {{name}}&lt;/p&gt;<br>
+              &nbsp;&nbsp;&lt;p&gt;Age: {{age}}&lt;/p&gt;<br>
+              &lt;/script&gt;
+            </code>
+            <p>これがレンダリングされると、次のようになる。</p>
+            <code>
+              &lt;p&gt;Name: Test User&lt;/p&gt;<br>
+              &lt;p&gt;Age: 21&lt;/p&gt;
+            </code>
+            <p>また、TemplateとModelはバインディングされており、Modelのプロパティを変更することによりTemplateは再レンダリングされ、Template(HTML)が変更されるとModelのプロパティが変更される。</p>
+            <p>このため、GUIアプリケーションを構築している時に記述しなければならない、変更イベントの多くを省略できる。</p><br>
+            <p>Router</p>
+            <p>Routerは、WebアプリケーションにおけるRouterと同様に、リクエストされたURLを対応するTemplate(およびModel, Controller)に変換する役割を持つ。</p>
+            <p>Ember.jsではページ内のリンクを作成すると、ページ上のパスが変更されるがサーバにHTMLリクエストを行わない。内部でTemplateの切り替えを行う。</p>
+            <p>また、URLは表示しているページに対応したURLがブラウザのアドレスバーに表示されるため、URLをコピーして他のユーザに伝えたり、ブックマークして任意のページからアプリケーションを開始することも可能。</p><br>
+            <p>Component</p>
+            <p>ComponentはTemplateの一種だが、再利用可能な小さな部品と考えると良いだろう。 組み込みで提供されている部品としては、linkToがある。このComponentは文字どおりハイパーリンクを作成するComponentであり、アプリケーションの設定などから最適なリンクを自動的に作成する。</p>
+            <p>ユーザはTemplateの一部をComponetに置き換えていくことで、コピペ地獄から解放されるはず。ComponentはTemplateと、同じように作成することができる。</p><br>
+            <p>Model</p>
+            <p>Modelは、永続化データを格納するためのオブジェクト。Template上でレンダリングされ、ユーザに情報を提供する。</p>
+            <p>ほとんどのアプリケーションで、ModelはサーバからJSON APIを使ってロードされる。そして、必要に応じてサーバに保存するためのリクエストを行うだろう。</p>
+            <p>Ember.jsではTemplate/Model/Controllerをワンセットで組み合わせることも簡単で、そのような場合はRuby on Railsのように、ほとんどのコードを書かずに、CRUD風なGUIを作ることもできる</p><br>
+            <p>Route</p>
+            <p>Routeは、どのModelを表示するかをTemplateに伝えるオブジェクト。</p>
+            <p>Routerとは異なるので注意。解りにくい。</p><br>
+            <p>Controller</p>
+            <p>Controllerはリクエストを受け付けて処理を行う窓口…ではありません。MVCにおけるControllerは、Template(View)とModelの接着剤としての機能を持ちます。</p>
+            <p>その機能のひとつとしては、イベント処理の窓口。これはウェブMVCとどうようにイベントハンドラを定義し、イベント発火時の処理を記述する。Modelの変更などを行えば、後は勝手にTemplateが再レンダリングされるので、非常に簡単。</p>
+            <p>また、Controllerはアプリケーションの状態も管理する。これは、永続化が不要で、一時的に保持したいデータと考えれば良いだろう。</p>
+            <br><p>参考サイト</p>
+            <a href="https://dev.classmethod.jp/articles/hello-emberjs/">https://dev.classmethod.jp/articles/hello-emberjs/</a><br><br>
+
+            <h4>Backbone</h4>
+            <p>クライアントサイドMVCとは</p>
+            <p>まずはBackbone.jsを学ぶ前にクライアントサイドMVCとは何かということについて解説します。</p>
+
+            <p>jQueryの登場により、面倒だったJavaScriptでのDOM操作などが、とても簡単に記述できるようになりました。しかし、大規模なJavaScriptのアプリケーションを作ろうとした時に、jQueryを使うだけではJavaScriptのプログラムを管理するのが難しくなります。</p>
+
+            <p>なぜならjQueryは基本的にDOM操作やAjaxなどをクロスブラウザで使うことを簡単にするという目的であるため、大規模なプログラムのコードを管理しやすくするという機能はもっていないからです。</p>
+
+            <p>それでは大規模なアプリケーションのプログラムを管理しやすくするにはどうすればいいでしょうか。答えはプログラムをきちんと設計することです。しかし「設計」と一口にいっても、機能ごとにプログラムを分割したり、よく使う機能をクラスとして抽象化したりと、さまざまな手法が考えられます。</p>
+
+            <p>よい設計の手法として代表的なものがMVCです。MVCというのは、Model（ビジネスロジックを担当する部分）、View（表示・出力を担当する部分）、Controller（入力を受け取りModelとViewをつなぐ部分）という、大きく3つにコードを分けてプログラムを記述する設計の手法です。</p>
+
+            <p>MVCは元々サーバーサイドのプログラムでよく使われる設計手法ですが、最近ではクライアントサイドでも、このMVCの考え方を設計に取り入れることが多くなってきています。サーバーサイドのMVCと区別するため「クライアントサイドMVC」と呼ばれることが多いようです。</p>
+
+            <h4>Backbone.jsが解決しないこと</h4>
+            <p>Backbone.jsを使うとMVCの設計にプログラムを分割することができます。しかし、Backbone.jsを使えば、すべてのプロジェクトがうまくいってハッピーになるというわけではありません。例えばBackbone.jsを使って解決できないことに、次のようなものがあります。</p>
+
+            <p>短期的な生産性の向上</p>
+            <p>コード量の削減</p>
+            <p>jQueryを使うと画像のロールオーバーやアコーディオンメニューなどを開発するときに格段に生産性が上がり、コード量も大幅に削減できることが期待されます。しかしBackbone.jsを導入したからといって、それがさらに改善されるということはほぼないと思っていいでしょう。</p>
+
+            <p>Backbone.jsが解決することは、中規模から大規模のJavaScriptのプログラムを実装し、メンテナンスしていくうえでの長期的な生産性の向上です。</p>
+
+            <p>また、そのためにはプログラムを設計する力というものが必要になってきます。</p>
+
+            <p>Backbone.jsはある程度設計の手助けをしてくれますが、ガチガチに制約を設けるということはしません。ですのでBackbone.jsを使う開発者が、どのように設計すればメンテナンスしやすいプログラムにできるかということを、自ら考えてプログラムを組む必要があります。面倒で難しいように感じるかもしれませんが、その分、柔軟でさまざまなケースに対応できるフレームワークとなっています。</p>
+
+            <h4>Backbone.jsのアーキテクチャ</h4>
+
+            <table width="600" height="300" border="1">
+            <thead>
+              <tr>
+                <th>名前</th>
+                <th>MVCでの分類</th>
+                <th>役割の概要</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Backbone.Model</td>
+                <td>Model</td>
+                <td>一つのデータの管理を行う</td>
+              </tr>
+              <tr>
+                <td>Backbone.Collection</td>
+                <td>Model</td>
+                <td>一つのデータの管理を行う</td>
+              </tr>
+              <tr>
+                <td>Backbone.View</td>
+                <td>View</td>
+                <td>DOM 操作や表示の管理を行う</td>
+              </tr>
+              <tr>
+                <td>Backbone.Router</td>
+                <td>Controller</td>
+                <td>URL による処理の振り分けを行う</td>
+              </tr>
+              <tr>
+                <td>Backbone.History</td>
+                <td>Controller</td>
+                <td>履歴の管理を行う</td>
+              </tr>
+            </tbody>
+            </table>
+
+            <p>表を見て分かるように、Backbone.ModelとBackbone.Collectionの2つがMVCのModelに相当するので、単にModelといった場合、どちらを指すかわかりづらいので注意してください。</p>
+
+            <p>本シリーズでは単にModelといった場合にはBackbone.ModelとBackbone.Collectionの両方を含めた意味で使い、Backbone.Modelを指す場合は、Backbone.Modelと記述します。</p>
+
+            <p>また、表のように役割が分担されていますが、その役割を厳密に守らなくてもコードが正しければ動作はします。例えば、Modelの中でjQueryを使ってDOM操作を行うことも可能です。しかし、それをやってしまうとせっかくBackbone.jsを使って役割分担した設計が意味を持たなくなるので、DOM操作は必ずViewの中で行うというルール決めが重要なのです。</p>
+        </div>
+    </div>
+    </div>
+
+  </body>
