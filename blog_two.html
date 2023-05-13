@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunyuSpace!!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="sidebarMenu">
+            <ul class="navbar-nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="./blog.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  <span class="ml-2">目次</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog_one.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  <span class="ml-2">ブログ①</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog_two.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  <span class="ml-2">ブログ②</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog_three.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  <span class="ml-2">ブログ③</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        </div>
+        <div class="col-md-9">
+            <h1 class="h2">ブログ</h1>
+            <h4>WebSocketについて</h4>
+            <p>現在（2023/05）、担当案件で使用しているWebsocket</p>
+            <p>個人的なアプリ開発でも使っていたものの、どういった仕組みなのかを把握できていない</p>
+            <p>そこで、Websocketについてまとめたいと思う</p>
+            <h4>WebSocketとは</h4>
+            <p>WebSocketとは、ブラウザとウェブサーバーとの間で双方向通信を行うための通信規格です。</p>
+            <p>WebSocketでは、サーバー側とユーザー側が常にオンライン状態を維持することによって、双方向通信を可能としています。</p>
+            <h4>WebSocketの歴史</h4>
+            <p>これまでは、Webで様々な通信を行うにはHTTPを使用することが、もっぱらの主流となっていました。</p>
+            <p>しかし、時代が進むと同時に、SNSなどが登場し、即座に反応することができるリアルタイムなやりとりが求められるようになりました。</p>
+            <p>HTTPにはリアルタイムの通信を難しくするある問題がありました。</p>
+            <p>まず、1つのコネクションで1つのリクエストしか送れないこと、もうひとつが、リクエストはクライアント側からしか送ることが出来ないという2つの点が問題となっていました。</p>
+            <p>こうしたリアルタイムでのやりとりを可能とするために、HTTPの問題点を解消する新たなプロトコルとしてWebSocketが誕生しました。</p>
+            <h4>WebSocketの活用例</h4>
+            <p>たとえば、チャットサイトやアプリケーションでは、WebSocketの常時双方をオンラインにしているという特徴を生かし、多くサーバーでWebSocketが活用されています。</p>
+            <p>また、アクセス解析サイトなどでも、WebSocketは多くの活用例があります。</p>
+            <p>これは、あるサイトやブログなどのアクセス結果をWebSocketを利用し、リアルタイムで参照できるサービスとなっています。</p>
+            <br>
+            <p>WebSocketは、サーバーとユーザーが常にオンライン状態を維持することで、双方向通信を可能にしている、とあるが具体的にはどのような通信の仕組みなのだろうか？</p>
+            <p>1. コネクション確立</p>
+            <p>WebSocketは、クライアントからサーバーにリクエストを送ってコネクションを確立するところから始まる。</p>
+            <p>このリクエストやレスポンスがHTTPに乗っ取った形式になってるのが、WebSocketの大きな特徴。</p>
+            <p>まず、クライアント(ブラウザと思ってもらえば大体OK)から以下の様なリクエストを送る。</p>
+            <code>
+              GET /resource HTTP/1.1
+              Host: example.com
+              Upgrade: websocket
+              Connection: upgrade
+              Sec-WebSocket-Version: 13
+              Sec-WebSocket-Key: E4WSEcseoWr4csPLS2QJHA==
+            </code>
+            <p>これはexample.comというhostの/resourceという相対URIに対するリクエストになってる。</p>
+            <p>普段HTTPだとhttp://example.com/resourceとか叩いてるのと同じイメージ。</p>
+            <p>次はサーバからのレスポンスなんだけど、これも例の如く完全にHTTPの形式になっている。</p>
+            <code>
+              HTTP/1.1 101 OK
+              Upgrade: websocket
+              Connection: upgrade
+              Sec-WebSocket-Accept: 7eQChgCtQMnVILefJAO6dK5JwPc=
+            </code>
+            <p>レスポンスはこれだけで、めちゃくちゃシンプルになってる。このレスポンスを受け取った時点でWebSocketのコネクションが確立された事になって、双方向通信が可能になる。</p>
+            <p>この辺のコネクション確立の為の一連の流れはWebSocket opening ハンドシェイクと呼ばれる。</p>
+
+            <p>2. 双方向通信の実現</p>
+            <p>ハンドシェイクが終わると、TCP上で双方向通信が可能になる。</p>
+            <p>ハンドシェイク時はHTTPを使うからその前にTCPのコネクションを確立してる訳だけど、ハンドシェイク後はその確立されたTCPコネクション上で、双方向にデータをやり取りする事になる</p>
+            <p>TCP（Transmission Control Protocol）はインターネットなどのIPネットワークで標準的に用いられる通信手順（プロトコル）の一つで、ネットワーク層のIP（Internet Protocol）と各種のアプリケーション層のプロトコル（HTTPなど）の中間のトランスポート層で機能する。</p>
+            <p>TCPは「コネクション型」に分類されるプロトコルで、通信開始時に「スリーウェイハンドシェイク」と呼ばれる手順により、使用するポート番号や一度に伝送できるデータ量（ウィンドウサイズ）、パケットの順序を表す番号の初期値などを交換する。</p>
+            <p>ちなみに、セッションとは、通信の開始から終了までを管理する一つの単位のことを指すのに対して、コネクションは，そのセッションでデータ転送を行うための論理的な回線のこと。</p>
+            <p>一つのセッションに一つのコネクションしかないこともあるが，一つのセッションに複数のコネクションが存在する場合もある。コネクションはセッションによって管理される。</p>
+            <p>WebSocketにおいては、 フレーム と呼ばれる単位でデータが送信される。</p>
+            <p>WebSocketはクライアントとサーバーの間でTCPコネクションを張りっぱなしにして通信を行う</p>
+
+            <h4>pythonによるWebsocket通信の方法について</h4>
+            <p></p>
+
+            <p>参考サイト</p>
+            <a href="https://www.freshvoice.net/knowledge/word/6323/#:~:text=WebSocket%E3%81%A8%E3%81%AF%E3%80%81%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%A8,%E3%81%8C%E5%8F%AF%E8%83%BD%E3%81%A8%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82">https://www.freshvoice.net/knowledge/word/6323/#:~:text=WebSocket%E3%81%A8%E3%81%AF%E3%80%81%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%A8,%E3%81%8C%E5%8F%AF%E8%83%BD%E3%81%A8%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82</a>
+            <a href="https://qiita.com/south37/items/6f92d4268fe676347160">https://qiita.com/south37/items/6f92d4268fe676347160</a>
+        </div>
+    </div>
+    </div>
+
+  </body>
