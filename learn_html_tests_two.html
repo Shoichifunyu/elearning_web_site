@@ -8,6 +8,7 @@
     <link href="style/styles.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -84,21 +85,47 @@
               <option value="value03">img</option>
               <option value="value04">gnp</option>
             </select>
-            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL1">正解</button><br>
+            <button id="select_btn" type="button" class="btn btn-primary" data-modal-title="modal-1">
+              回答
+            </button><br>
 
-            <div class="modal fade" id="MODAL1">
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
-
                   <div class="modal-header">
-                      正解：img
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                   </div>
-
-                </div> <!-- modal-content -->
-              </div>  <!-- modal-dialog -->
-            </div>  <!-- modal fade -->
+                  <div class="modal-body">
+                    ...
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
     </div>
     </div>
 
+    <script>
+      let myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {})
+      let btn = document.getElementById("select_btn")
+      let element = document.getElementById("select01")
+      let modalTitle = document.querySelector('.modal-title')
+      let modalBody = document.querySelector('.modal-body')
+      let selectedValue = ""
+      $('#select02').change(function() {
+        selectedValue = $('option:selected').val();
+      })
+      btn.addEventListener('click', (e) => {
+        if (selectedValue === "value03") {
+          modalTitle.textContent = "正解！"
+          modalBody.textContent = ""
+        } else {
+          modalTitle.textContent = "不正解！"
+          modalBody.textContent = ""
+        }
+      myModal.show()
+      })
+
+    </script>
   </body>
