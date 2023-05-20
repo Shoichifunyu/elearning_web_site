@@ -217,6 +217,56 @@
                 </div> <!-- modal-content -->
               </div>  <!-- modal-dialog -->
             </div>  <!-- modal fade -->
+
+            <h4>テスト⑤</h4>
+            <p>ある企業は AWS でアプリケーションをホストしています。同社は Amazon Cognito を使用してユーザーを管理しています。ユーザーがアプリケーションにログインすると、アプリケーションは、Amazon API Gateway でホストされている REST API を使用して、Amazon DynamoDB から必要なデータを取得します。同社は、開発労力を軽減するために、REST API へのアクセスを制御する AWS マネージド ソリューションを望んでいます。運用オーバーヘッドを最小限に抑えながらこれらの要件を満たすソリューションはどれですか?</p>
+            <select id="select02">
+              <option value="value01">AWS Lambda 関数を API Gateway の承認者として設定し、どのユーザーがリクエストを行ったかを検証します。</option>
+              <option value="value02">ユーザーごとに、リクエストごとに送信する必要がある API キーを作成して割り当てます。AWS Lambda 関数を使用してキーを検証します。</option>
+              <option value="value03">すべてのリクエストのヘッダーにユーザーの電子メール アドレスを送信します。AWS Lambda 関数を呼び出して、そのメール アドレスを持つユーザーに適切なアクセス権があることを検証します。</option>
+              <option value="value04">API Gateway で Amazon Cognito ユーザープールオーソライザーを設定し、Amazon Cognito が各リクエストを検証できるようにします。</option>
+            </select>
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL5">正解</button><br>
+
+            <div class="modal fade" id="MODAL5">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                      正解：ユーザーごとに、リクエストごとに送信する必要がある API キーを作成して割り当てます。AWS Lambda 関数を使用してキーを検証します。
+                  </div>
+                  <div class="modal-body">
+                    <p>Amazon Cognito ユーザープールオーソライザーは、アクセス制御を提供する AWS マネージド ソリューションで、API Gateway を統合して各リクエストを検証することができます。これにより、開発労力と運用オーバーヘッドを最小限に抑えることができます。</p>
+                  </div>
+
+                </div> <!-- modal-content -->
+              </div>  <!-- modal-dialog -->
+            </div>  <!-- modal fade -->
+
+            <h4>テスト⑥</h4>
+            <p>ある企業は最近、AWS アカウントの Amazon EC2 インスタンス上でさまざまな新しいワークロードを開始しました。企業は、インスタンスにリモートかつ安全にアクセスして管理するための戦略を作成する必要があります。同社は、ネイティブ AWS サービスと連携し、AWS Well-Architected フレームワークに従う反復可能なプロセスを実装する必要があります。運用オーバーヘッドを最小限に抑えながらこれらの要件を満たすソリューションはどれですか?</p>
+            <select id="select02">
+              <option value="value01">EC2 シリアル コンソールを使用して、管理のために各インスタンスのターミナル インターフェイスに直接アクセスします。</option>
+              <option value="value02">適切な IAM ロールを既存のインスタンスと新しいインスタンスのそれぞれにアタッチします。AWS Systems Manager Session Manager を使用して、リモート SSH セッションを確立します。</option>
+              <option value="value03">管理用 SSH キー ペアを作成します。公開キーを各 EC2 インスタンスにロードします。要塞ホストをパブリック サブネットにデプロイして、各インスタンスの管理用のトンネルを提供します。</option>
+              <option value="value04">AWS サイト間 VPN 接続を確立します。ローカルのオンプレミス マシンを使用し、VPN トンネル経由で SSH キーを使用してインスタンスに直接接続するように管理者に指示します。</option>
+            </select>
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL6">正解</button><br>
+
+            <div class="modal fade" id="MODAL6">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                      正解：適切な IAM ロールを既存のインスタンスと新しいインスタンスのそれぞれにアタッチします。AWS Systems Manager Session Manager を使用して、リモート SSH セッションを確立します。
+                  </div>
+                  <div class="modal-body">
+                    <p>既存および新しいインスタンスに適切なIAMロールをアタッチし、AWS Systems Manager Session Managerを使用してリモートSSHセッションを確立することで、ネイティブAWSサービスと連携し、運用オーバーヘッドを最小限に抑えながらインスタンスにリモートかつ安全にアクセスして管理するための戦略を提供します。</p>
+                  </div>
+
+                </div> <!-- modal-content -->
+              </div>  <!-- modal-dialog -->
+            </div>  <!-- modal fade -->
             <p>参考サイト</p>
             <a href="https://aws-exam.net/saa/">https://aws-exam.net/saa</a>
         </div>
