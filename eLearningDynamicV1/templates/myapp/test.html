@@ -113,6 +113,7 @@
                 </div>
               </div>
             </div>
+          </div>
           
             <h4>テスト2</h4>
             <p>グローバルイベントの主催者は、日次レポートを静的なHTMLページとしてオンラインに配置したいと考えています。このページは、世界中のユーザーから何百万ものビューを生成すると予想されています。ファイルはAmazon S3バケットに保存されます。ソリューションアーキテクトは、効率的で効果的なソリューションを設計するように求められています。これを達成するためにソリューションアーキテクトはどのアクションを実行する必要がありますか？</p>
@@ -155,6 +156,7 @@
                 </div>
               </div>
             </div>
+          </div>
           
             <h4>テスト3</h4>
             <p>AWSにおける可用性向上策として間違っているものは次のうちどれですか？</p>
@@ -197,6 +199,7 @@
                 </div>
               </div>
             </div>
+          </div>
           
             <h4>テスト4</h4>
             <p>S3に関する説明として正しいものは次のうちどれですか？</p>
@@ -239,6 +242,7 @@
                 </div>
               </div>
             </div>
+          </div>
           
             <h4>テスト5</h4>
             <p>ある企業は AWS でアプリケーションをホストしています。同社は Amazon Cognito を使用してユーザーを管理しています。ユーザーがアプリケーションにログインすると、アプリケーションは、Amazon API Gateway でホストされている REST API を使用して、Amazon DynamoDB から必要なデータを取得します。同社は、開発労力を軽減するために、REST API へのアクセスを制御する AWS マネージド ソリューションを望んでいます。運用オーバーヘッドを最小限に抑えながらこれらの要件を満たすソリューションはどれですか?</p>
@@ -281,6 +285,7 @@
                 </div>
               </div>
             </div>
+          </div>
           
             <h4>テスト6</h4>
             <p>ある企業は最近、AWS アカウントの Amazon EC2 インスタンス上でさまざまな新しいワークロードを開始しました。企業は、インスタンスにリモートかつ安全にアクセスして管理するための戦略を作成する必要があります。同社は、ネイティブ AWS サービスと連携し、AWS Well-Architected フレームワークに従う反復可能なプロセスを実装する必要があります。運用オーバーヘッドを最小限に抑えながらこれらの要件を満たすソリューションはどれですか?</p>
@@ -323,8 +328,8 @@
                 </div>
               </div>
             </div>
+          </div>
           
-        </div>
     </div>
   </div>
   <script>
@@ -372,10 +377,6 @@
     let selectedValue6 = $('#select06 option:selected').text();
   
   
-    $('#select01').change(function() {
-      console.log("changed value" + $('#select01 option:selected').text())
-      selectedValue1 = $('#select01 option:selected').text();
-    })
     btn1.addEventListener('click', (e) => {
       if (selectedValue1 === "5") {
         modalTitle1.textContent = "正解！"
@@ -386,11 +387,22 @@
       }
       myModal1.show()
     })
-  
-    $('#select02').change(function() {
-      console.log("changed value" + $('#select02 option:selected').text())
-      selectedValue2 = $('#select02 option:selected').text();
+    $('#select01').change(function() {
+      console.log("changed value" + $('[id: select01] option:selected').text())
+      selectedValue1 = $('option:selected').text();
+      btn1.addEventListener('click', (e) => {
+      if (selectedValue1 === "5") {
+        modalTitle1.textContent = "正解！"
+        modalBody1.textContent = "デフォルトの制限は、１リージョンあたり 5 VPCとなります。ただし、AWSへ専用フォームからリクエストすれば、ニーズに応じてリージョンあたり 100 個の VPC を持つことができます。"
+      } else {
+        modalTitle1.textContent = "不正解！"
+        modalBody1.textContent = ""
+      }
+      myModal1.show()
     })
+    })
+    console.log(selectedValue1)
+  
     btn2.addEventListener('click', (e) => {
       if (selectedValue2 === "S3バケットをオリジンとしてAmazon CloudFrontを使用する") {
         modalTitle2.textContent = "正解！"
@@ -401,11 +413,22 @@
       }
       myModal2.show()
     })
-  
-    $('#select03').change(function() {
-      console.log("changed value" + $('#select03 option:selected').text())
-      selectedValue3 = $('#select03 option:selected').text();
+    $('#select02').change(function() {
+      console.log("changed value" + $('[id: select02] option:selected').text())
+      selectedValue2 = $('option:selected').text();
+      btn2.addEventListener('click', (e) => {
+      if (selectedValue2 === "S3バケットをオリジンとしてAmazon CloudFrontを使用する") {
+        modalTitle2.textContent = "正解！"
+        modalBody2.textContent = "問題文に世界中のユーザが利用となるので、CloudFrontを使用するのが正解となります。Amazon CloudFront は、データ、動画、アプリケーション、および API をすべてデベロッパーにとって使いやすい環境で、低レイテンシーの高速転送により世界中の視聴者に安全に配信する高速コンテンツ配信ネットワーク (CDN) サービスです。"
+      } else {
+        modalTitle2.textContent = "不正解！"
+        modalBody2.textContent = ""
+      }
+      myModal2.show()
     })
+    })
+    console.log(selectedValue2)
+  
     btn3.addEventListener('click', (e) => {
       if (selectedValue3 === "ステートレスな設計とする") {
         modalTitle3.textContent = "正解！"
@@ -416,11 +439,22 @@
       }
       myModal3.show()
     })
-  
-    $('#select04').change(function() {
-      console.log("changed value" + $('#select04 option:selected').text())
-      selectedValue4 = $('#select04 option:selected').text();
+    $('#select03').change(function() {
+      console.log("changed value" + $('[idselect03] option:selected').text())
+      selectedValue3 = $('option:selected').text();
+      btn3.addEventListener('click', (e) => {
+      if (selectedValue3 === "ステートレスな設計とする") {
+        modalTitle3.textContent = "正解！"
+        modalBody3.textContent = "ステートレスやステートフルは状態管理のアーキテクチャであり、可用性とは無関係となります。"
+      } else {
+        modalTitle3.textContent = "不正解！"
+        modalBody3.textContent = ""
+      }
+      myModal3.show()
     })
+    })
+    console.log(selectedValue3)
+  
     btn4.addEventListener('click', (e) => {
       if (selectedValue4 === "S3に新規追加されたデータは、参照タイミングによらず一貫性が担保されている") {
         modalTitle4.textContent = "正解！"
@@ -431,11 +465,22 @@
       }
       myModal4.show()
     })
-  
-    $('#select05').change(function() {
-      console.log("changed value" + $('#select05 option:selected').text())
-      selectedValue5 = $('#select05 option:selected').text();
+    $('#select04').change(function() {
+      console.log("changed value" + $('[id: select04] option:selected').text())
+      selectedValue4 = $('option:selected').text();
+      btn4.addEventListener('click', (e) => {
+      if (selectedValue4 === "S3に新規追加されたデータは、参照タイミングによらず一貫性が担保されている") {
+        modalTitle4.textContent = "正解！"
+        modalBody4.textContent = "S3の新規追加は、書き込み後の読み込み整合性は担保されているため、参照タイミングによらず、一貫性が保証される。S3の削除は、結果整合性のため、参照タイミングによっては削除前のデータが参照される場合がある。S3の更新は、結果整合性のため、参照タイミングによっては更新前のデータが参照される場合がある"
+      } else {
+        modalTitle4.textContent = "不正解！"
+        modalBody4.textContent = ""
+      }
+      myModal4.show()
     })
+    })
+    console.log(selectedValue4)
+  
     btn5.addEventListener('click', (e) => {
       if (selectedValue5 === "ユーザーごとに、リクエストごとに送信する必要がある API キーを作成して割り当てます。AWS Lambda 関数を使用してキーを検証します。") {
         modalTitle5.textContent = "正解！"
@@ -446,11 +491,22 @@
       }
       myModal5.show()
     })
-  
-    $('#select06').change(function() {
-      console.log("changed value" + $('#select06 option:selected').text())
-      selectedValue6 = $('#select06 option:selected').text();
+    $('#select05').change(function() {
+      console.log("changed value" + $('[id: select05] option:selected').text())
+      selectedValue5 = $('option:selected').text();
+      btn5.addEventListener('click', (e) => {
+      if (selectedValue5 === "ユーザーごとに、リクエストごとに送信する必要がある API キーを作成して割り当てます。AWS Lambda 関数を使用してキーを検証します。") {
+        modalTitle5.textContent = "正解！"
+        modalBody5.textContent = "Amazon Cognito ユーザープールオーソライザーは、アクセス制御を提供する AWS マネージド ソリューションで、API Gateway を統合して各リクエストを検証することができます。これにより、開発労力と運用オーバーヘッドを最小限に抑えることができます。"
+      } else {
+        modalTitle5.textContent = "不正解！"
+        modalBody5.textContent = ""
+      }
+      myModal5.show()
     })
+    })
+    console.log(selectedValue5)
+  
     btn6.addEventListener('click', (e) => {
       if (selectedValue6 === "適切な IAM ロールを既存のインスタンスと新しいインスタンスのそれぞれにアタッチします。AWS Systems Manager Session Manager を使用して、リモート SSH セッションを確立します。") {
         modalTitle6.textContent = "正解！"
@@ -461,6 +517,21 @@
       }
       myModal6.show()
     })
+    $('#select06').change(function() {
+      console.log("changed value" + $('[id: select06] option:selected').text())
+      selectedValue6 = $('option:selected').text();
+      btn6.addEventListener('click', (e) => {
+      if (selectedValue6 === "適切な IAM ロールを既存のインスタンスと新しいインスタンスのそれぞれにアタッチします。AWS Systems Manager Session Manager を使用して、リモート SSH セッションを確立します。") {
+        modalTitle6.textContent = "正解！"
+        modalBody6.textContent = "既存および新しいインスタンスに適切なIAMロールをアタッチし、AWS Systems Manager Session Managerを使用してリモートSSHセッションを確立することで、ネイティブAWSサービスと連携し、運用オーバーヘッドを最小限に抑えながらインスタンスにリモートかつ安全にアクセスして管理するための戦略を提供します。"
+      } else {
+        modalTitle6.textContent = "不正解！"
+        modalBody6.textContent = ""
+      }
+      myModal6.show()
+    })
+    })
+    console.log(selectedValue6)
   
   </script>
   </body>
