@@ -1,4 +1,3 @@
-import bs4 #ライブラリbs4をインポートする
 from jinja2 import Template
 import string
 import yaml
@@ -14,7 +13,7 @@ def convert_list_elements(my_list, data):
     return converted_list
 
 #bs4で定義された関数を使ってsample.htmlを読み取る
-html = open('../templates/myapp/learn_git_tests_one_template.html')
+html = open('../templates/myapp/learn_git_tests_one_template.html', encoding="utf8", errors='ignore')
 html_read = html.read()
 template = Template(html_read)
 with open('../templates/myapp/learn_git_tests.yaml') as file:
