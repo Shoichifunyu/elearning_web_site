@@ -26,6 +26,7 @@ for num in range(len(obj['array'])):
         e = num+1
         print(k+str(e))
         data = {
+        # ここはnumdではなく、eを指定する
         k+str(num) : v,
         # 's1-'+str(num) : question['s1'],
         # 's2-'+str(num) : question['s2'],
