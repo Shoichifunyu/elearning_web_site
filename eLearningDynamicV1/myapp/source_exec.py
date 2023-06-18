@@ -13,7 +13,7 @@ def convert_list_elements(my_list, data):
     return converted_list
 
 #文字化けしている可能性がある為、learn_git_tests_one_template.htmlは要確認
-html = open('../templates/myapp/learn_git_tests_one_template.html', encoding="utf8", errors='ignore')
+html = open('../templates/myapp/learn_git_tests_one_template.html')
 html_read = html.read()
 template = Template(html_read)
 with open('../templates/myapp/learn_git_tests.yaml') as file:
