@@ -26,7 +26,7 @@ for num in range(len(obj['array'])):
         e = num+1
         print(k+str(e))
         data = {
-        k+str(num) : v,
+        k+str(e) : v,
         # 's1-'+str(num) : question['s1'],
         # 's2-'+str(num) : question['s2'],
         # 's3-'+str(num) : question['s3'],
