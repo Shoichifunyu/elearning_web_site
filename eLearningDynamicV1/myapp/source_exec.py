@@ -14,9 +14,9 @@ with open('../templates/myapp/learn_aws_tests.yaml') as file:
 base_data = {}
 for num in range(len(obj['array'])):
     print("num:"+str(num))
-    for key, value in obj['array'][num].items():
+    for k, v in obj['array'][num].items():
         data = {
-        key+str(num) : value,
+        k+str(num) : v,
         # 's1-'+str(num) : question['s1'],
         # 's2-'+str(num) : question['s2'],
         # 's3-'+str(num) : question['s3'],
