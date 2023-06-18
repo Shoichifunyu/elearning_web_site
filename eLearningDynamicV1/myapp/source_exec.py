@@ -1,4 +1,3 @@
-import bs4 #ライブラリbs4をインポートする
 from jinja2 import Template
 import string
 import yaml
