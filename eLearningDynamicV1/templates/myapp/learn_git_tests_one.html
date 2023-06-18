@@ -73,12 +73,12 @@
             
             
             <h4>テスト1</h4>
-            <p>git addコマンドとはどのようなものか</p>
+            <p>git cloneコマンドとはどのようなものか</p>
             <select id="select01">
-              <option value="value01">ファイルを削除するためのコマンド</option>
-              <option value="value02">リモートリポジトリから最新の変更を取得するためのコマンド</option>
-              <option value="value03">作業ディレクトリ内の変更をステージングエリアに追加するコマンド</option>
-              <option value="value04">ファイルを作成するためのコマンド</option>
+              <option value="value01">ファイルを作成するためのコマンド</option>
+              <option value="value02">作業ディレクトリ内の変更をステージングエリアに追加するコマンド</option>
+              <option value="value03">リモートリポジトリを複製するためのコマンド</option>
+              <option value="value04">ファイルを削除するためのコマンド</option>
             </select>
                 <!-- モーダルウィンドウを起動するボタン -->
             <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL1">正解</button><br> -->
@@ -91,10 +91,10 @@
                 <div class="modal-content">
 
                   <div class="modal-header">
-                      正解：作業ディレクトリ内の変更をステージングエリアに追加するコマンド
+                      正解：リモートリポジトリを複製するためのコマンド
                   </div>
                   <div class="modal-body">
-                    git add は、作業ディレクトリ内の変更をステージングエリアに追加するコマンドです。 このコマンドは、個々のファイルのアップデート内容を次回コミット対象とするよう、Git に指示します。 ただし、実際には git add コマンドだけではリポジトリに何も影響しません。
+                    クローンを実行すると、リモートリポジトリの内容をまるまるダウンロードしてきて、別のマシンにローカルリポジトリとして作成できます。
                   </div>
 
                 </div>
@@ -115,12 +115,12 @@
             </div>
           
             <h4>テスト2</h4>
-            <p>リポジトリとは何か</p>
+            <p>git addコマンドとはどのようなものか</p>
             <select id="select02">
-              <option value="value01">ディレクトリのこと</option>
-              <option value="value02">ファイルのこと</option>
-              <option value="value03">ファイルやディレクトリの状態を記録する場所</option>
-              <option value="value04">通常リモートリポジトリを指す</option>
+              <option value="value01">ファイルを削除するためのコマンド</option>
+              <option value="value02">リモートリポジトリから最新の変更を取得するためのコマンド</option>
+              <option value="value03">作業ディレクトリ内の変更をステージングエリアに追加するコマンド</option>
+              <option value="value04">ファイルを作成するためのコマンド</option>
             </select>
                 <!-- モーダルウィンドウを起動するボタン -->
             <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL2">正解</button><br> -->
@@ -133,10 +133,10 @@
                 <div class="modal-content">
 
                   <div class="modal-header">
-                      正解：ファイルやディレクトリの状態を記録する場所
+                      正解：作業ディレクトリ内の変更をステージングエリアに追加するコマンド
                   </div>
                   <div class="modal-body">
-                    リポジトリとは、ファイルやディレクトリの状態を記録する場所です。保存された状態は、内容の変更履歴として格納されています。変更履歴を管理したいディレクトリをリポジトリの管理下に置くことで、そのディレクトリ内のファイルやディレクトリの変更履歴を記録することができます。
+                    git add は、作業ディレクトリ内の変更をステージングエリアに追加するコマンドです。 このコマンドは、個々のファイルのアップデート内容を次回コミット対象とするよう、Git に指示します。 ただし、実際には git add コマンドだけではリポジトリに何も影響しません。
                   </div>
 
                 </div>
@@ -157,12 +157,12 @@
             </div>
           
             <h4>テスト3</h4>
-            <p>Gitのリポジトリは2種類に分けられるが、それは何と何？</p>
+            <p>リポジトリとは何か</p>
             <select id="select03">
-              <option value="value01">developブランチとmainブランチ</option>
-              <option value="value02">developブランチとローカルリポジトリ</option>
-              <option value="value03">リモートリポジトリとローカルリポジトリ</option>
-              <option value="value04">mainブランチとローカルリポジトリ</option>
+              <option value="value01">ディレクトリのこと</option>
+              <option value="value02">ファイルのこと</option>
+              <option value="value03">ファイルやディレクトリの状態を記録する場所</option>
+              <option value="value04">通常リモートリポジトリを指す</option>
             </select>
                 <!-- モーダルウィンドウを起動するボタン -->
             <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL3">正解</button><br> -->
@@ -175,10 +175,10 @@
                 <div class="modal-content">
 
                   <div class="modal-header">
-                      正解：リモートリポジトリとローカルリポジトリ
+                      正解：ファイルやディレクトリの状態を記録する場所
                   </div>
                   <div class="modal-body">
-                    リモートリポジトリ：専用のサーバに配置して複数人で共有するためのリポジトリです。ローカルリポジトリ：ユーザ一人ひとりが利用するために、自分の手元のマシン上に配置するリポジトリです。
+                    リポジトリとは、ファイルやディレクトリの状態を記録する場所です。保存された状態は、内容の変更履歴として格納されています。変更履歴を管理したいディレクトリをリポジトリの管理下に置くことで、そのディレクトリ内のファイルやディレクトリの変更履歴を記録することができます。
                   </div>
 
                 </div>
@@ -199,12 +199,12 @@
             </div>
           
             <h4>テスト4</h4>
-            <p>git commitコマンドとはどのようなものか</p>
+            <p>Gitのリポジトリは2種類に分けられるが、それは何と何？</p>
             <select id="select04">
-              <option value="value01">単にファイルを無視するためのコマンド</option>
-              <option value="value02">追加・変更したファイルをGitに登録するためのコマンド</option>
-              <option value="value03">作業ディレクトリからファイルを削除するためのコマンド</option>
-              <option value="value04">ローカルリポジトリの変更をリモートリポジトリにプッシュするためのコマンド</option>
+              <option value="value01">developブランチとmainブランチ</option>
+              <option value="value02">developブランチとローカルリポジトリ</option>
+              <option value="value03">リモートリポジトリとローカルリポジトリ</option>
+              <option value="value04">mainブランチとローカルリポジトリ</option>
             </select>
                 <!-- モーダルウィンドウを起動するボタン -->
             <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL4">正解</button><br> -->
@@ -217,10 +217,10 @@
                 <div class="modal-content">
 
                   <div class="modal-header">
-                      正解：追加・変更したファイルをGitに登録するためのコマンド
+                      正解：リモートリポジトリとローカルリポジトリ
                   </div>
                   <div class="modal-body">
-                    git commitとは一言で言うと「追加・変更したファイルをGitに登録するためのコマンド」です。 通常のファイル操作では変更した内容を上書き保存すれば、ファイルの内容が変更されますが、Gitのリポジトリに変更内容を登録（保存）するためには、git commitを使用する必要があります。
+                    リモートリポジトリ：専用のサーバに配置して複数人で共有するためのリポジトリです。ローカルリポジトリ：ユーザ一人ひとりが利用するために、自分の手元のマシン上に配置するリポジトリです。
                   </div>
 
                 </div>
@@ -241,12 +241,12 @@
             </div>
           
             <h4>テスト5</h4>
-            <p>git pushコマンドとはどのようなものか</p>
+            <p>git commitコマンドとはどのようなものか</p>
             <select id="select05">
-              <option value="value01">作業ディレクトリからファイルを追加するためのコマンド</option>
-              <option value="value02">単にファイルを無視するためのコマンド</option>
-              <option value="value03">作業ディレクトリ内の変更をステージングエリアに追加するコマンド</option>
-              <option value="value04">ローカル リポジトリ コンテンツをリモート リポジトリにアップロードするために使用されます。</option>
+              <option value="value01">単にファイルを無視するためのコマンド</option>
+              <option value="value02">追加・変更したファイルをGitに登録するためのコマンド</option>
+              <option value="value03">作業ディレクトリからファイルを削除するためのコマンド</option>
+              <option value="value04">ローカルリポジトリの変更をリモートリポジトリにプッシュするためのコマンド</option>
             </select>
                 <!-- モーダルウィンドウを起動するボタン -->
             <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL5">正解</button><br> -->
@@ -259,10 +259,10 @@
                 <div class="modal-content">
 
                   <div class="modal-header">
-                      正解：ローカル リポジトリ コンテンツをリモート リポジトリにアップロードするために使用されます。
+                      正解：追加・変更したファイルをGitに登録するためのコマンド
                   </div>
                   <div class="modal-body">
-                    Git のプッシュ git push コマンドは、ローカル リポジトリ コンテンツをリモート リポジトリにアップロードするために使用されます。 プッシュは、コミットをローカル リポジトリからリモート リポジトリに送る操作です。
+                    git commitとは一言で言うと「追加・変更したファイルをGitに登録するためのコマンド」です。 通常のファイル操作では変更した内容を上書き保存すれば、ファイルの内容が変更されますが、Gitのリポジトリに変更内容を登録（保存）するためには、git commitを使用する必要があります。
                   </div>
 
                 </div>
@@ -283,12 +283,12 @@
             </div>
           
             <h4>テスト6</h4>
-            <p>上流ブランチ（Upstream branch）とは何を示すか</p>
+            <p>git pushコマンドとはどのようなものか</p>
             <select id="select06">
-              <option value="value01">Gitでリポジトリを新規作成するとデフォルトで作成されるブランチ</option>
-              <option value="value02">特定のリモートブランチの状態をそのままコピーしたローカルブランチのこと</option>
-              <option value="value03">開発の中心となるブランチ</option>
-              <option value="value04">あるローカルブランチが、履歴を追跡するように設定したリモートブランチ</option>
+              <option value="value01">作業ディレクトリからファイルを追加するためのコマンド</option>
+              <option value="value02">単にファイルを無視するためのコマンド</option>
+              <option value="value03">作業ディレクトリ内の変更をステージングエリアに追加するコマンド</option>
+              <option value="value04">ローカル リポジトリ コンテンツをリモート リポジトリにアップロードするために使用されます。</option>
             </select>
                 <!-- モーダルウィンドウを起動するボタン -->
             <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL6">正解</button><br> -->
@@ -301,10 +301,10 @@
                 <div class="modal-content">
 
                   <div class="modal-header">
-                      正解：あるローカルブランチが、履歴を追跡するように設定したリモートブランチ
+                      正解：ローカル リポジトリ コンテンツをリモート リポジトリにアップロードするために使用されます。
                   </div>
                   <div class="modal-body">
-                    「追跡する」とは、そのブランチ上で発生したすべての更新をそのまま取り込む事を前提とする、という意味で、上流ブランチを設定することにより Git 自身もそのような動作をする事になります。Gitでは、リモートにある情報も全てローカルにコピーがある。リモートoriginのmainブランチに対応するブランチはorigin/mainという名前でローカルに保存されている。このブランチを、ローカルのmainブランチの 上流ブランチ(upstream branch) と呼ぶ。
+                    Git のプッシュ git push コマンドは、ローカル リポジトリ コンテンツをリモート リポジトリにアップロードするために使用されます。 プッシュは、コミットをローカル リポジトリからリモート リポジトリに送る操作です。
                   </div>
 
                 </div>
@@ -325,12 +325,12 @@
             </div>
           
             <h4>テスト7</h4>
-            <p>release ブランチとはどのようなものか</p>
+            <p>上流ブランチ（Upstream branch）とは何を示すか</p>
             <select id="select07">
-              <option value="value01">旧バージョンをサポートし続けなければいけないプロジェクトで必要なブランチ</option>
-              <option value="value02">時として重大な不具合が見つかる場合に緊急の修正を行うブランチ</option>
-              <option value="value03">製品をリリースするために使うブランチ</option>
-              <option value="value04">機能の追加や変更、バグフィックスを行うブランチ</option>
+              <option value="value01">Gitでリポジトリを新規作成するとデフォルトで作成されるブランチ</option>
+              <option value="value02">特定のリモートブランチの状態をそのままコピーしたローカルブランチのこと</option>
+              <option value="value03">開発の中心となるブランチ</option>
+              <option value="value04">あるローカルブランチが、履歴を追跡するように設定したリモートブランチ</option>
             </select>
                 <!-- モーダルウィンドウを起動するボタン -->
             <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL7">正解</button><br> -->
@@ -343,10 +343,10 @@
                 <div class="modal-content">
 
                   <div class="modal-header">
-                      正解：製品をリリースするために使うブランチ
+                      正解：あるローカルブランチが、履歴を追跡するように設定したリモートブランチ
                   </div>
                   <div class="modal-body">
-                    製品のリリース時には、関連する作業が必要になる場合が多いでしょう。そういった作業は、develop ブランチから release ブランチを切って、そのブランチでリリース作業を行います。リリース作業が完了したら、master ブランチと develop ブランチにマージして、master ブランチのマージコミットにリリースタグ（バージョンなど）をうちましょう。その後、release ブランチは削除します。
+                    「追跡する」とは、そのブランチ上で発生したすべての更新をそのまま取り込む事を前提とする、という意味で、上流ブランチを設定することにより Git 自身もそのような動作をする事になります。Gitでは、リモートにある情報も全てローカルにコピーがある。リモートoriginのmainブランチに対応するブランチはorigin/mainという名前でローカルに保存されている。このブランチを、ローカルのmainブランチの 上流ブランチ(upstream branch) と呼ぶ。
                   </div>
 
                 </div>
@@ -367,12 +367,12 @@
             </div>
           
             <h4>テスト8</h4>
-            <p>統合ブランチとは何か？</p>
+            <p>release ブランチとはどのようなものか</p>
             <select id="select08">
-              <option value="value01">リリース版が何時でも作成可能なようしておくためのブランチ</option>
-              <option value="value02">機能追加やバグ修正といったある課題に関する作業を行うために作成するブランチ</option>
-              <option value="value03">複数の課題に関する作業を同時に行う時は、その数だけ作成されるブランチ</option>
-              <option value="value04">王様のブランチのこと</option>
+              <option value="value01">旧バージョンをサポートし続けなければいけないプロジェクトで必要なブランチ</option>
+              <option value="value02">時として重大な不具合が見つかる場合に緊急の修正を行うブランチ</option>
+              <option value="value03">製品をリリースするために使うブランチ</option>
+              <option value="value04">機能の追加や変更、バグフィックスを行うブランチ</option>
             </select>
                 <!-- モーダルウィンドウを起動するボタン -->
             <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL8">正解</button><br> -->
@@ -385,10 +385,10 @@
                 <div class="modal-content">
 
                   <div class="modal-header">
-                      正解：リリース版が何時でも作成可能なようしておくためのブランチ
+                      正解：製品をリリースするために使うブランチ
                   </div>
                   <div class="modal-body">
-                    統合ブランチとは、リリース版が何時でも作成可能なようしておくためのブランチです。また、トピックブランチの分岐元としても使用します。そのため、安定した状態を保っておくことが重要です。何らかの変更を行う場合は、トピックブランチを作成して作業を行うことが多いです。また、Jenkins等のCIツールを使用した自動ビルドやテストはこのブランチを使って行います。通常、masterブランチを統合ブランチとして使用します。
+                    製品のリリース時には、関連する作業が必要になる場合が多いでしょう。そういった作業は、develop ブランチから release ブランチを切って、そのブランチでリリース作業を行います。リリース作業が完了したら、master ブランチと develop ブランチにマージして、master ブランチのマージコミットにリリースタグ（バージョンなど）をうちましょう。その後、release ブランチは削除します。
                   </div>
 
                 </div>
@@ -409,12 +409,12 @@
             </div>
           
             <h4>テスト9</h4>
-            <p>HEADとは何か</p>
+            <p>統合ブランチとは何か？</p>
             <select id="select09">
-              <option value="value01">統合ブランチの先頭を表す名前</option>
-              <option value="value02">現在使用しているブランチの先頭を表す名前</option>
-              <option value="value03">分岐したブランチの先頭を表す名前</option>
-              <option value="value04">最も最初のコミットを表す名前</option>
+              <option value="value01">リリース版が何時でも作成可能なようしておくためのブランチ</option>
+              <option value="value02">機能追加やバグ修正といったある課題に関する作業を行うために作成するブランチ</option>
+              <option value="value03">複数の課題に関する作業を同時に行う時は、その数だけ作成されるブランチ</option>
+              <option value="value04">王様のブランチのこと</option>
             </select>
                 <!-- モーダルウィンドウを起動するボタン -->
             <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL9">正解</button><br> -->
@@ -427,10 +427,10 @@
                 <div class="modal-content">
 
                   <div class="modal-header">
-                      正解：現在使用しているブランチの先頭を表す名前
+                      正解：リリース版が何時でも作成可能なようしておくためのブランチ
                   </div>
                   <div class="modal-body">
-                    HEADとは、現在使用しているブランチの先頭を表す名前です。デフォルトではmasterの先頭を表しています。HEADが移動することで、使用するブランチが変更されます。
+                    統合ブランチとは、リリース版が何時でも作成可能なようしておくためのブランチです。また、トピックブランチの分岐元としても使用します。そのため、安定した状態を保っておくことが重要です。何らかの変更を行う場合は、トピックブランチを作成して作業を行うことが多いです。また、Jenkins等のCIツールを使用した自動ビルドやテストはこのブランチを使って行います。通常、masterブランチを統合ブランチとして使用します。
                   </div>
 
                 </div>
@@ -451,12 +451,12 @@
             </div>
           
             <h4>テスト10</h4>
-            <p>stashとは何か</p>
+            <p>HEADとは何か</p>
             <select id="select010">
-              <option value="value01">今までの変更履歴を削除すること</option>
-              <option value="value02">今までの変更履歴を一つにまとめること</option>
-              <option value="value03">ファイルの変更内容を一時的に記録しておく領域のこと</option>
-              <option value="value04">.shファイルで管理すること</option>
+              <option value="value01">統合ブランチの先頭を表す名前</option>
+              <option value="value02">現在使用しているブランチの先頭を表す名前</option>
+              <option value="value03">分岐したブランチの先頭を表す名前</option>
+              <option value="value04">最も最初のコミットを表す名前</option>
             </select>
                 <!-- モーダルウィンドウを起動するボタン -->
             <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL10">正解</button><br> -->
@@ -469,10 +469,10 @@
                 <div class="modal-content">
 
                   <div class="modal-header">
-                      正解：ファイルの変更内容を一時的に記録しておく領域のこと
+                      正解：現在使用しているブランチの先頭を表す名前
                   </div>
                   <div class="modal-body">
-                    stashを使うことで、ワークツリーとインデックス中でまだコミットされていない変更を一時的に退避させることができます。退避させた変更は後から取り出して、元のブランチや別のブランチに反映させることができます。
+                    HEADとは、現在使用しているブランチの先頭を表す名前です。デフォルトではmasterの先頭を表しています。HEADが移動することで、使用するブランチが変更されます。
                   </div>
 
                 </div>
@@ -493,12 +493,12 @@
             </div>
           
             <h4>テスト11</h4>
-            <p>git fetchコマンドとはどのようなものか</p>
+            <p>stashとは何か</p>
             <select id="select011">
-              <option value="value01">リモートリポジトリの内容のマージを自動的に行うコマンド</option>
-              <option value="value02">作業ディレクトリ内の変更をステージングエリアに追加するコマンド</option>
-              <option value="value03">リモートリポジトリの最新の履歴の取得だけを行うコマンド</option>
-              <option value="value04">追加・変更したファイルをGitに登録するためのコマンド</option>
+              <option value="value01">今までの変更履歴を削除すること</option>
+              <option value="value02">今までの変更履歴を一つにまとめること</option>
+              <option value="value03">ファイルの変更内容を一時的に記録しておく領域のこと</option>
+              <option value="value04">.shファイルで管理すること</option>
             </select>
                 <!-- モーダルウィンドウを起動するボタン -->
             <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL11">正解</button><br> -->
@@ -511,10 +511,10 @@
                 <div class="modal-content">
 
                   <div class="modal-header">
-                      正解：リモートリポジトリの最新の履歴の取得だけを行うコマンド
+                      正解：ファイルの変更内容を一時的に記録しておく領域のこと
                   </div>
                   <div class="modal-body">
-                    git pullと同じくリモートリポジトリから最新の状態をローカルに反映するコマンドなのですが、反映先がアップストリームブランチとなります。また、git mergeはアップストリームブランチからローカルブランチを更新するコマンドとなります。単にリモートリポジトリの内容を確認したいだけの時はマージをしたくない場合もあります。そのような時はfetchを使用します。
+                    stashを使うことで、ワークツリーとインデックス中でまだコミットされていない変更を一時的に退避させることができます。退避させた変更は後から取り出して、元のブランチや別のブランチに反映させることができます。
                   </div>
 
                 </div>
@@ -535,12 +535,12 @@
             </div>
           
             <h4>テスト12</h4>
-            <p>git checkoutコマンドとはどのようなものか</p>
+            <p>git fetchコマンドとはどのようなものか</p>
             <select id="select012">
-              <option value="value01">今作業しているブランチから退出するだけのコマンド</option>
+              <option value="value01">リモートリポジトリの内容のマージを自動的に行うコマンド</option>
               <option value="value02">作業ディレクトリ内の変更をステージングエリアに追加するコマンド</option>
-              <option value="value03">今作業しているブランチから退出して、新たに他の作業ブランチで作業をしたい場合に使用するためのコマンド</option>
-              <option value="value04">ファイルを削除するためのコマンド</option>
+              <option value="value03">リモートリポジトリの最新の履歴の取得だけを行うコマンド</option>
+              <option value="value04">追加・変更したファイルをGitに登録するためのコマンド</option>
             </select>
                 <!-- モーダルウィンドウを起動するボタン -->
             <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL12">正解</button><br> -->
@@ -553,10 +553,10 @@
                 <div class="modal-content">
 
                   <div class="modal-header">
-                      正解：今作業しているブランチから退出して、新たに他の作業ブランチで作業をしたい場合に使用するためのコマンド
+                      正解：リモートリポジトリの最新の履歴の取得だけを行うコマンド
                   </div>
                   <div class="modal-body">
-                    「git branch Aブランチ」でAブランチへチェックアウトすることができる。
+                    git pullと同じくリモートリポジトリから最新の状態をローカルに反映するコマンドなのですが、反映先がアップストリームブランチとなります。また、git mergeはアップストリームブランチからローカルブランチを更新するコマンドとなります。単にリモートリポジトリの内容を確認したいだけの時はマージをしたくない場合もあります。そのような時はfetchを使用します。
                   </div>
 
                 </div>
@@ -577,12 +577,12 @@
             </div>
           
             <h4>テスト13</h4>
-            <p>|q13|</p>
+            <p>git checkoutコマンドとはどのようなものか</p>
             <select id="select013">
-              <option value="value01">|sa13|</option>
-              <option value="value02">|sb13|</option>
-              <option value="value03">|sc13|</option>
-              <option value="value04">|sd13|</option>
+              <option value="value01">今作業しているブランチから退出するだけのコマンド</option>
+              <option value="value02">作業ディレクトリ内の変更をステージングエリアに追加するコマンド</option>
+              <option value="value03">今作業しているブランチから退出して、新たに他の作業ブランチで作業をしたい場合に使用するためのコマンド</option>
+              <option value="value04">ファイルを削除するためのコマンド</option>
             </select>
                 <!-- モーダルウィンドウを起動するボタン -->
             <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL13">正解</button><br> -->
@@ -595,10 +595,10 @@
                 <div class="modal-content">
 
                   <div class="modal-header">
-                      正解：|a13|
+                      正解：今作業しているブランチから退出して、新たに他の作業ブランチで作業をしたい場合に使用するためのコマンド
                   </div>
                   <div class="modal-body">
-                    |a_des13|
+                    「git branch Aブランチ」でAブランチへチェックアウトすることができる。
                   </div>
 
                 </div>
@@ -720,9 +720,9 @@
       selectedValue1 = $('#select01 option:selected').text();
     })
     btn1.addEventListener('click', (e) => {
-      if (selectedValue1 === "作業ディレクトリ内の変更をステージングエリアに追加するコマンド") {
+      if (selectedValue1 === "リモートリポジトリを複製するためのコマンド") {
         modalTitle1.textContent = "正解！"
-        modalBody1.textContent = "git add は、作業ディレクトリ内の変更をステージングエリアに追加するコマンドです。 このコマンドは、個々のファイルのアップデート内容を次回コミット対象とするよう、Git に指示します。 ただし、実際には git add コマンドだけではリポジトリに何も影響しません。"
+        modalBody1.textContent = "クローンを実行すると、リモートリポジトリの内容をまるまるダウンロードしてきて、別のマシンにローカルリポジトリとして作成できます。"
       } else {
         modalTitle1.textContent = "不正解！"
         modalBody1.textContent = ""
@@ -735,9 +735,9 @@
       selectedValue2 = $('#select02 option:selected').text();
     })
     btn2.addEventListener('click', (e) => {
-      if (selectedValue2 === "ファイルやディレクトリの状態を記録する場所") {
+      if (selectedValue2 === "作業ディレクトリ内の変更をステージングエリアに追加するコマンド") {
         modalTitle2.textContent = "正解！"
-        modalBody2.textContent = "リポジトリとは、ファイルやディレクトリの状態を記録する場所です。保存された状態は、内容の変更履歴として格納されています。変更履歴を管理したいディレクトリをリポジトリの管理下に置くことで、そのディレクトリ内のファイルやディレクトリの変更履歴を記録することができます。"
+        modalBody2.textContent = "git add は、作業ディレクトリ内の変更をステージングエリアに追加するコマンドです。 このコマンドは、個々のファイルのアップデート内容を次回コミット対象とするよう、Git に指示します。 ただし、実際には git add コマンドだけではリポジトリに何も影響しません。"
       } else {
         modalTitle2.textContent = "不正解！"
         modalBody2.textContent = ""
@@ -750,9 +750,9 @@
       selectedValue3 = $('#select03 option:selected').text();
     })
     btn3.addEventListener('click', (e) => {
-      if (selectedValue3 === "リモートリポジトリとローカルリポジトリ") {
+      if (selectedValue3 === "ファイルやディレクトリの状態を記録する場所") {
         modalTitle3.textContent = "正解！"
-        modalBody3.textContent = "リモートリポジトリ：専用のサーバに配置して複数人で共有するためのリポジトリです。ローカルリポジトリ：ユーザ一人ひとりが利用するために、自分の手元のマシン上に配置するリポジトリです。"
+        modalBody3.textContent = "リポジトリとは、ファイルやディレクトリの状態を記録する場所です。保存された状態は、内容の変更履歴として格納されています。変更履歴を管理したいディレクトリをリポジトリの管理下に置くことで、そのディレクトリ内のファイルやディレクトリの変更履歴を記録することができます。"
       } else {
         modalTitle3.textContent = "不正解！"
         modalBody3.textContent = ""
@@ -765,9 +765,9 @@
       selectedValue4 = $('#select04 option:selected').text();
     })
     btn4.addEventListener('click', (e) => {
-      if (selectedValue4 === "追加・変更したファイルをGitに登録するためのコマンド") {
+      if (selectedValue4 === "リモートリポジトリとローカルリポジトリ") {
         modalTitle4.textContent = "正解！"
-        modalBody4.textContent = "git commitとは一言で言うと「追加・変更したファイルをGitに登録するためのコマンド」です。 通常のファイル操作では変更した内容を上書き保存すれば、ファイルの内容が変更されますが、Gitのリポジトリに変更内容を登録（保存）するためには、git commitを使用する必要があります。"
+        modalBody4.textContent = "リモートリポジトリ：専用のサーバに配置して複数人で共有するためのリポジトリです。ローカルリポジトリ：ユーザ一人ひとりが利用するために、自分の手元のマシン上に配置するリポジトリです。"
       } else {
         modalTitle4.textContent = "不正解！"
         modalBody4.textContent = ""
@@ -780,9 +780,9 @@
       selectedValue5 = $('#select05 option:selected').text();
     })
     btn5.addEventListener('click', (e) => {
-      if (selectedValue5 === "ローカル リポジトリ コンテンツをリモート リポジトリにアップロードするために使用されます。") {
+      if (selectedValue5 === "追加・変更したファイルをGitに登録するためのコマンド") {
         modalTitle5.textContent = "正解！"
-        modalBody5.textContent = "Git のプッシュ git push コマンドは、ローカル リポジトリ コンテンツをリモート リポジトリにアップロードするために使用されます。 プッシュは、コミットをローカル リポジトリからリモート リポジトリに送る操作です。"
+        modalBody5.textContent = "git commitとは一言で言うと「追加・変更したファイルをGitに登録するためのコマンド」です。 通常のファイル操作では変更した内容を上書き保存すれば、ファイルの内容が変更されますが、Gitのリポジトリに変更内容を登録（保存）するためには、git commitを使用する必要があります。"
       } else {
         modalTitle5.textContent = "不正解！"
         modalBody5.textContent = ""
@@ -795,9 +795,9 @@
       selectedValue6 = $('#select06 option:selected').text();
     })
     btn6.addEventListener('click', (e) => {
-      if (selectedValue6 === "あるローカルブランチが、履歴を追跡するように設定したリモートブランチ") {
+      if (selectedValue6 === "ローカル リポジトリ コンテンツをリモート リポジトリにアップロードするために使用されます。") {
         modalTitle6.textContent = "正解！"
-        modalBody6.textContent = "「追跡する」とは、そのブランチ上で発生したすべての更新をそのまま取り込む事を前提とする、という意味で、上流ブランチを設定することにより Git 自身もそのような動作をする事になります。Gitでは、リモートにある情報も全てローカルにコピーがある。リモートoriginのmainブランチに対応するブランチはorigin/mainという名前でローカルに保存されている。このブランチを、ローカルのmainブランチの 上流ブランチ(upstream branch) と呼ぶ。"
+        modalBody6.textContent = "Git のプッシュ git push コマンドは、ローカル リポジトリ コンテンツをリモート リポジトリにアップロードするために使用されます。 プッシュは、コミットをローカル リポジトリからリモート リポジトリに送る操作です。"
       } else {
         modalTitle6.textContent = "不正解！"
         modalBody6.textContent = ""
@@ -810,9 +810,9 @@
       selectedValue7 = $('#select07 option:selected').text();
     })
     btn7.addEventListener('click', (e) => {
-      if (selectedValue7 === "製品をリリースするために使うブランチ") {
+      if (selectedValue7 === "あるローカルブランチが、履歴を追跡するように設定したリモートブランチ") {
         modalTitle7.textContent = "正解！"
-        modalBody7.textContent = "製品のリリース時には、関連する作業が必要になる場合が多いでしょう。そういった作業は、develop ブランチから release ブランチを切って、そのブランチでリリース作業を行います。リリース作業が完了したら、master ブランチと develop ブランチにマージして、master ブランチのマージコミットにリリースタグ（バージョンなど）をうちましょう。その後、release ブランチは削除します。"
+        modalBody7.textContent = "「追跡する」とは、そのブランチ上で発生したすべての更新をそのまま取り込む事を前提とする、という意味で、上流ブランチを設定することにより Git 自身もそのような動作をする事になります。Gitでは、リモートにある情報も全てローカルにコピーがある。リモートoriginのmainブランチに対応するブランチはorigin/mainという名前でローカルに保存されている。このブランチを、ローカルのmainブランチの 上流ブランチ(upstream branch) と呼ぶ。"
       } else {
         modalTitle7.textContent = "不正解！"
         modalBody7.textContent = ""
@@ -825,9 +825,9 @@
       selectedValue8 = $('#select08 option:selected').text();
     })
     btn8.addEventListener('click', (e) => {
-      if (selectedValue8 === "リリース版が何時でも作成可能なようしておくためのブランチ") {
+      if (selectedValue8 === "製品をリリースするために使うブランチ") {
         modalTitle8.textContent = "正解！"
-        modalBody8.textContent = "統合ブランチとは、リリース版が何時でも作成可能なようしておくためのブランチです。また、トピックブランチの分岐元としても使用します。そのため、安定した状態を保っておくことが重要です。何らかの変更を行う場合は、トピックブランチを作成して作業を行うことが多いです。また、Jenkins等のCIツールを使用した自動ビルドやテストはこのブランチを使って行います。通常、masterブランチを統合ブランチとして使用します。"
+        modalBody8.textContent = "製品のリリース時には、関連する作業が必要になる場合が多いでしょう。そういった作業は、develop ブランチから release ブランチを切って、そのブランチでリリース作業を行います。リリース作業が完了したら、master ブランチと develop ブランチにマージして、master ブランチのマージコミットにリリースタグ（バージョンなど）をうちましょう。その後、release ブランチは削除します。"
       } else {
         modalTitle8.textContent = "不正解！"
         modalBody8.textContent = ""
@@ -840,9 +840,9 @@
       selectedValue9 = $('#select09 option:selected').text();
     })
     btn9.addEventListener('click', (e) => {
-      if (selectedValue9 === "現在使用しているブランチの先頭を表す名前") {
+      if (selectedValue9 === "リリース版が何時でも作成可能なようしておくためのブランチ") {
         modalTitle9.textContent = "正解！"
-        modalBody9.textContent = "HEADとは、現在使用しているブランチの先頭を表す名前です。デフォルトではmasterの先頭を表しています。HEADが移動することで、使用するブランチが変更されます。"
+        modalBody9.textContent = "統合ブランチとは、リリース版が何時でも作成可能なようしておくためのブランチです。また、トピックブランチの分岐元としても使用します。そのため、安定した状態を保っておくことが重要です。何らかの変更を行う場合は、トピックブランチを作成して作業を行うことが多いです。また、Jenkins等のCIツールを使用した自動ビルドやテストはこのブランチを使って行います。通常、masterブランチを統合ブランチとして使用します。"
       } else {
         modalTitle9.textContent = "不正解！"
         modalBody9.textContent = ""
@@ -855,9 +855,9 @@
       selectedValue10 = $('#select010 option:selected').text();
     })
     btn10.addEventListener('click', (e) => {
-      if (selectedValue10 === "ファイルの変更内容を一時的に記録しておく領域のこと") {
+      if (selectedValue10 === "現在使用しているブランチの先頭を表す名前") {
         modalTitle10.textContent = "正解！"
-        modalBody10.textContent = "stashを使うことで、ワークツリーとインデックス中でまだコミットされていない変更を一時的に退避させることができます。退避させた変更は後から取り出して、元のブランチや別のブランチに反映させることができます。"
+        modalBody10.textContent = "HEADとは、現在使用しているブランチの先頭を表す名前です。デフォルトではmasterの先頭を表しています。HEADが移動することで、使用するブランチが変更されます。"
       } else {
         modalTitle10.textContent = "不正解！"
         modalBody10.textContent = ""
@@ -870,9 +870,9 @@
       selectedValue11 = $('#select011 option:selected').text();
     })
     btn11.addEventListener('click', (e) => {
-      if (selectedValue11 === "リモートリポジトリの最新の履歴の取得だけを行うコマンド") {
+      if (selectedValue11 === "ファイルの変更内容を一時的に記録しておく領域のこと") {
         modalTitle11.textContent = "正解！"
-        modalBody11.textContent = "git pullと同じくリモートリポジトリから最新の状態をローカルに反映するコマンドなのですが、反映先がアップストリームブランチとなります。また、git mergeはアップストリームブランチからローカルブランチを更新するコマンドとなります。単にリモートリポジトリの内容を確認したいだけの時はマージをしたくない場合もあります。そのような時はfetchを使用します。"
+        modalBody11.textContent = "stashを使うことで、ワークツリーとインデックス中でまだコミットされていない変更を一時的に退避させることができます。退避させた変更は後から取り出して、元のブランチや別のブランチに反映させることができます。"
       } else {
         modalTitle11.textContent = "不正解！"
         modalBody11.textContent = ""
@@ -885,9 +885,9 @@
       selectedValue12 = $('#select012 option:selected').text();
     })
     btn12.addEventListener('click', (e) => {
-      if (selectedValue12 === "今作業しているブランチから退出して、新たに他の作業ブランチで作業をしたい場合に使用するためのコマンド") {
+      if (selectedValue12 === "リモートリポジトリの最新の履歴の取得だけを行うコマンド") {
         modalTitle12.textContent = "正解！"
-        modalBody12.textContent = "「git branch Aブランチ」でAブランチへチェックアウトすることができる。"
+        modalBody12.textContent = "git pullと同じくリモートリポジトリから最新の状態をローカルに反映するコマンドなのですが、反映先がアップストリームブランチとなります。また、git mergeはアップストリームブランチからローカルブランチを更新するコマンドとなります。単にリモートリポジトリの内容を確認したいだけの時はマージをしたくない場合もあります。そのような時はfetchを使用します。"
       } else {
         modalTitle12.textContent = "不正解！"
         modalBody12.textContent = ""
@@ -900,9 +900,9 @@
       selectedValue13 = $('#select013 option:selected').text();
     })
     btn13.addEventListener('click', (e) => {
-      if (selectedValue13 === "|a13|") {
+      if (selectedValue13 === "今作業しているブランチから退出して、新たに他の作業ブランチで作業をしたい場合に使用するためのコマンド") {
         modalTitle13.textContent = "正解！"
-        modalBody13.textContent = "|a_des13|"
+        modalBody13.textContent = "「git branch Aブランチ」でAブランチへチェックアウトすることができる。"
       } else {
         modalTitle13.textContent = "不正解！"
         modalBody13.textContent = ""
