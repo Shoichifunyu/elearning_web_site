@@ -12,7 +12,7 @@ def convert_list_elements(my_list, data):
     # converted_list.append(converted_item)
     return converted_list
 
-#bs4で定義された関数を使ってsample.htmlを読み取る
+#文字化けしている可能性がある為、learn_git_tests_one_template.htmlは要確認
 html = open('../templates/myapp/learn_git_tests_one_template.html', encoding="utf8", errors='ignore')
 html_read = html.read()
 template = Template(html_read)
