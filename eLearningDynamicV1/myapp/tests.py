@@ -1,3 +1,7 @@
-from django.test import TestCase
+class Dog():
+    name: str
+    def __init__(self, name):
+        self.name = name
+        print(f"僕の名前は{self.name}!!")
 
-# Create your tests here.
+taro = Dog("太郎")

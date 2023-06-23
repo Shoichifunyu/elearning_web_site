@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunyuSpace!!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="sidebarMenu">
+            <ul class="navbar-nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="./blog.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  <span class="ml-2">目次</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog_one.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  <span class="ml-2">ブログ①</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog_two.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  <span class="ml-2">ブログ②</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog_three.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  <span class="ml-2">ブログ③</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        </div>
+        <div class="col-md-9">
+            <h1 class="h2">ブログ</h1>
+            <h4>Pythonのclassについて</h4>
+            <p>Pythonにはclassという概念があるが、その内容を理解しないままコーディングしている方もいるのではないか</p>
+            <p>もし、それが分かればclassの活用をもっと行えると思う。そこで、今回はclassについて書いてみたい</p>
+            <h6>オブジェクト指向について</h6>
+            <p>前提として、classを語るうえで切り離せないのが、「オブジェクト指向」である。「モノ中心」と直訳されるが、この起源となるオブジェクト指向プログラミング言語が、1967年にノルウェーでSimula67という名前で考案された。この言語は、class、ポリモーフィズム、継承という3つの特徴がある。</p>
+            <p>オブジェクト指向が普及する以前は、システムの機能を詳細化していくという「機能中心」の開発手法が一般的だった。しかしこの場合、プログラムの改修が必要となった場合に、大規模な修正が必要になることもあった。</p>
+            <p>そこにオブジェクト指向が誕生したことにより、プログラムの再利用性・保守性を高めることができるようになった。</p>
+            <p>先に記載した通り、classはオブジェクト指向の3大要素の1つであるが、英訳すれば「分類」「種類」といった同類のものでまとめたもののことである。</p>
+            <p>classの対になるものとして、instanceが存在するが、こちらは「具体的なモノ」「実例」を表す。</p>
+            <p>例えば、「犬」classに、「太郎」「こなつ」「ポチ」というinstanceが存在する、といった具合である。</p>
+            <p>ここまでで、classを説明する前提としてオブジェクト指向というものがあり、classはその3大要素の1つであることを説明した。</p>
+            <p>では、classはプログラム上どのように利用できるのかについて、Pythonのclassを用いて説明しよう。</p>
+            <code>
+            class Dog():
+              name: str
+              def __init__(self, name):
+                  self.name = name
+                  print(f"僕の名前は{self.name}!!")
+            <code>
+            <p>上記はPythonのclassの例である。1行目でDogというclassを定義し、2行目でclassのinstance変数となるnameの型をstr型に指定している。</p>
+            <p>3行目の関数__init__はコンストラクタと言って、classが呼び出された際に、インスタンスが作成されることにより、動く部分である。この関数内で、インスタンス変数（self.name）にclass呼び出し時にコーダーが指定した引数を代入し、print文で、「僕の名前は～～!!」という出力を行う。</p>
+            <p>だから、このclass定義さえ作ってしまえば、コーダーは</p>
+            <code>
+              taro = Dog("太郎")
+            </code>
+            <p>という様に書いてしまえば、instance変数であるnameに"太郎"が格納されたDogというclassをtaroに代入して利用することが可能になるのだ。</p>
+            <p>参考文献</p>
+            <p>2016年、平澤章、日経BPマーケティング、「オブジェクト指向でなぜつくるのか 第2版」</p>
+        </div>
+      </div>
+    </div>
+  </body>
