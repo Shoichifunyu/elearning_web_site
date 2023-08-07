@@ -81,12 +81,12 @@
               <option value="value04">|sd{{ loop.index }}|</option>
             </select>
                 <!-- モーダルウィンドウを起動するボタン -->
-            <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL{{loop.index}}">正解</button><br> -->
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL{{loop.index}}">正解</button><br>
             <button id="select_btn{{ loop.index }}" type="button" class="btn btn-primary" data-modal-title="modal-{{ loop.index }}">
               回答
             </button><br>
 
-            <!-- <div class="modal fade" id="MODAL{{loop.index}}">
+            <div class="modal fade" id="MODAL{{loop.index}}">
               <div class="modal-dialog">
                 <div class="modal-content">
 
@@ -99,7 +99,7 @@
 
                 </div>
               </div>  
-            </div>   -->
+            </div>  
             
             <div class="modal fade" id="exampleModal{{loop.index}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
