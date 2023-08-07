@@ -16,7 +16,7 @@ def convert_list_elements(my_list, data):
 html = open('../templates/myapp/learn_git_tests_one_template.html')
 html_read = html.read()
 template = Template(html_read)
-with open('../templates/myapp/learn_git_tests.yaml') as file:
+with open('../templates/myapp/learn_git_tests_one.yaml') as file:
     obj = yaml.safe_load(file)
 # print(obj['array'][0])
 base_data = {}
@@ -27,7 +27,7 @@ for num in range(len(obj['array'])):
         print(k+str(e))
         data = {
         # ここはnumdではなく、eを指定する
-        k+str(num) : v,
+        k+str(num+1) : v,
         # 's1-'+str(num) : question['s1'],
         # 's2-'+str(num) : question['s2'],
         # 's3-'+str(num) : question['s3'],
