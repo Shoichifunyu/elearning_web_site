@@ -1,0 +1,85 @@
+array: 
+- topic: Git Fetchの使い方について
+  main_topic: Gitの操作において、しばしば使われるFetch。今回はその使い方について、説明をしたいと思う。
+  question: そもそも、Git Fetchとはどのような時に使われるのだろうか？
+  answer: git fetchコマンドを使うと、リポジトリから最新の情報を取得することができるようだ。リポジトリの最新情報を取得するだけで、現在のローカルのソースコードが変わることがないというのが特徴のようだ。
+  situation: とりあえず、リポジトリから最新の情報を取得したい場合に使用するコマンドということは分かった。
+  complex: だがしかし、ここでいうリポジトリとは、ローカルのリポジトリのことなのか、はたまたリモートのリポジトリを指しているのかがいまいちわからない方もいるのではないか？
+  checking_q_and_a: 調べてみると、リモートレポジトリから、ブランチ（とタグ）の情報をローカルレポジトリに取得するための Git コマンドであることが分かった。この際、リモート側に存在するブランチは「リモート追跡ブランチ」と呼ばれるという特別な種類のブランチとしてローカルに反映されるようだ。これは、ローカルブランチには影響を受けないことを意味するようだ。
+- topic: リモート追跡ブランチについて
+  main_topic: Git Fetchの使い方でも出てきた、リモート追跡ブランチについて調べてみた。こちらは、ローカルリポジトリに存在するリモートブランチの状態を追跡するブランチのようだ。
+  question: では、ここでいう「追跡」とは具体的には何を指しているのだろうか？
+  answer: これは、ローカルからリモートブランチを追跡することを指している。
+  situation: リモートブランチの状態を確認するには必ずネットワークにつながっている必要があり、ネットワークがないところで作業する場合、リモートブランチの状態を保持して参照するためのブランチが、ローカルにリモート追跡ブランチとして存在するようだ。
+  complex: では、どのタイミングでリモート追跡ブランチの内容は更新されるのだろうか？
+  checking_q_and_a: それが、前々から出てきているGit Fetchのコマンドで、これにより同期処理が行われる。
+- topic: Git FetchとGit Mergeの違いについて
+  main_topic: しばしば話題に挙がる「Git FetchとGit Pullの違い」。今日はこの違いを明確化したい。
+  question: ずばり、違いとは何なのか？今までの話から、Git Fetchとは、リモートブランチの最新の状態をリモート追跡ブランチに同期するコマンドということまでは分かっている。
+  answer: Git Pullとは、FetchとMergeの合わせ技のことである。つまり、Fetchに加えてMergeを行うことでローカルのブランチがようやく変更されることを意味する。
+  situation: リモートブランチの内容をそのままローカルブランチに反映させたいときはPull、あくまでリモート追跡ブランチに同期させたい場合はFetchを使うようだ。
+  complex: しかし、通常リモートの内容をローカルに反映させたくないという状況は考えづらい。何のためにFetchは存在するのだろうか？
+  checking_q_and_a: 考えられるパターンとしては、リモートの内容をローカルで確認したいが、まだローカルの内容の更新までは行いたくない時が考えられる。当たり前ではあるが、ローカルからリモートの内容を直接参照することはできず、Git Fetch後、リモート追跡ブランチ（origin/～～～)へチェックアウトして確認することで、ローカルを更新せずにリモートの内容を確認できる。
+- topic: FetchとRebaseの関連性について
+  main_topic: よく、リーダーから、「Rebase前にFetchをしているか」確認を受けることがある。今日はその理由について考えてみたい。
+  question: Rebaseとは、例えば作業ブランチ(bug_fix)にmainブランチをRebaseする、だったら、mainブランチからbug_fixブランチを切った後にmainブランチに対して更新(他の作業ブランチからmainブランチへのmergeなど)された内容をbug_fixブランチに取り込むことを意味していると考えるが、その前段として、1回のFetchを行うことにより、何がもたらされるのだろうか？
+  answer: まず、1回のFetchはmainブランチに対してRebaseするために行う必要があり、その際、ローカルのリモート追跡ブランチ(origin/main)を最新化しておく必要がある為行う。つまり、mainブランチへのcheckoutは行っておいた方がよい。何度も言うようだが、ローカルからリモートの内容を直接参照することはできないため、リモート追跡ブランチ(origin/main)を使って作業ブランチ(bug_fix)にmainブランチをRebaseするという作業となる。
+  situation: つまり、Rebaseの際にリモート(厳密にはリモート追跡ブランチ)に対して行いたい場合、Fetchにてリモート追跡ブランチを最新の状態に同期しておく必要がある、ということだ。リモートが成果物で、各作業者ごとに作った内容を統合したい場合、Rebaseにより最新の成果物の状態との競合が起こらないという状態にしてから、Mergeするのが安全ということだ。
+  complex: では、もしリモート成果物ブランチ(main)をFetch後に誰かほかの作業者がmainにMergeしてしまって、そのあと自身がRebase作業を行い、mainにMergeしようとした場合どうなるだろうか？
+  checking_q_and_a: 同じ箇所を編集していた場合、競合が発生するだろう。その場合は、再度Fetchを行い、Rebase作業の中で競合の解決を行うのが安全策である。
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
