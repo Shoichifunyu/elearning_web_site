@@ -1,0 +1,170 @@
+.ECM_CheckboxInput {
+padding: 12px 8px;
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+.ECM_CheckboxInput-Input {
+margin: 0;
+width: 0;
+opacity: 0;
+}
+.ECM_CheckboxInput:hover{
+background: rgba(0,0,0,.05) !important;
+}
+.ECM_CheckboxInput:hover > .ECM_CheckboxInput-DummyInput{
+transform: scale(1.1);
+}
+.ECM_CheckboxInput-Input:focus + .ECM_CheckboxInput-DummyInput{
+transform: scale(1.1);
+}
+.ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput {
+background: rgba(107, 26, 250, 1);
+}
+.ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput::before {
+content: "";
+display: block;
+position: absolute;
+top: 50%;
+left: 50%;
+width: 35%;
+height: 4px;
+border-radius: 2px;
+transform: translate(-6px, 5px) rotateZ(-135deg);
+transform-origin: 2px 2px;
+background: #FFFFFF;
+}
+.ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput::after {
+content: "";
+display: block;
+position: absolute;
+top: 50%;
+left: 50%;
+width: 70%;
+height: 4px;
+border-radius: 2px;
+transform: translate(-6px, 5px) rotateZ(-45deg);
+transform-origin: 2px 2px;
+background: #FFFFFF;
+}
+.ECM_CheckboxInput-DummyInput {
+position: relative;
+top: 0;
+left: 0;
+display: block;
+width: 32px;
+height: 32px;
+border: solid 2px transparent;
+background: rgba(0, 0, 0, .15);
+border-radius: 50%;
+transition: all .15s linear;
+}
+.ECM_CheckboxInput-LabelText {
+margin-left: 12px;
+display: block;
+font-size: 18px;
+font-weight: bold;
+}
+
+/* Google Fonts 読み込み */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@700&family=Share+Tech+Mono&display=swap');
+
+/* リセットCSS（簡易版） */
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+}
+
+/* 全体を囲うコンテナー＆背景 */
+.container {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 背景画像と文字を区別させるためのオーバーレイ */
+.countainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* カウントダウンタイマー本体 */
+.countdown {
+  position: relative;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* タイトル */
+.countdown-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+/* 年のテキスト */
+.new-year {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 200px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+/* タイマー部分を囲うコンテナー */
+.time-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* hours, minutes, secondsの共通スタイル */
+.time {
+  font-family: 'Share Tech Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  font-size: 20px;
+}
+
+/* hours, minutes, secondsの数値のスタイル */
+.time-num {
+  font-size: 60px;
+  line-height: 1;
+}
+
+/* 小さいデバイス用に文字サイズ & margin調整 */
+@media screen and (max-width: 600px) {
+  .countdown-title {
+    font-size: 50px;
+  }
+
+  .new-year {
+    font-size: 100px;
+  }
+
+  .time-wrap {
+    margin-top: 10px;
+  }
+
+  .time {
+    font-size: 12px;
+    margin: 0 10px;
+  }
+
+  .time-num {
+    font-size: 34px;
+  }
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FunyuSpace!!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link href="design.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8" />
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
@@ -70,6 +71,24 @@
         <div class="col-md-9">
             <h2>テスト</h2>
             <p>それではテストです。</p>
+
+            <div class="container">
+              <div class="countdown">
+                <h6 class="countdown-title">制限時間
+                  <span id="year" class="new-year"></span>
+                </h6>
+                <div class="time-container">
+                  <p class="time"><span id="minutes" class="time-num">01</span>minutes</p>
+                  <p class="time"><span id="seconds" class="time-num">00</span>seconds</p>
+                </div>
+              </div>
+            </div>
+            <!-- ボタンコントロール部分 -->
+            <div id="controls">
+              <div class="box">
+                <button id="start">スタート</button>
+              </div>
+            </div>
             
             
             <h4>テスト1</h4>
@@ -80,26 +99,13 @@
               <option value="value03">ファイルやディレクトリの状態を記録する場所</option>
               <option value="value04">通常リモートリポジトリを指す</option>
             </select>
-                <!-- モーダルウィンドウを起動するボタン -->
-            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL1">正解</button><br>
+
             <button id="select_btn1" type="button" class="btn btn-primary" data-modal-title="modal-1">
               回答
             </button><br>
 
-            <div class="modal fade" id="MODAL1">
-              <div class="modal-dialog">
-                <div class="modal-content">
-
-                  <div class="modal-header">
-                      正解：ファイルやディレクトリの状態を記録する場所
-                  </div>
-                  <div class="modal-body">
-                    リポジトリとは、ファイルやディレクトリの状態を記録する場所です。保存された状態は、内容の変更履歴として格納されています。変更履歴を管理したいディレクトリをリポジトリの管理下に置くことで、そのディレクトリ内のファイルやディレクトリの変更履歴を記録することができます。
-                  </div>
-
-                </div>
-              </div>  
-            </div>  
+            <!-- モーダルウィンドウを起動するボタン -->
+            <label class="ECM_CheckboxInput"><input class="ECM_CheckboxInput-Input" type="checkbox" id="checkElement1" disabled="disabled"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText"></span>正答</label>
             
             <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
@@ -122,26 +128,13 @@
               <option value="value03">リモートリポジトリとローカルリポジトリ</option>
               <option value="value04">mainブランチとローカルリポジトリ</option>
             </select>
-                <!-- モーダルウィンドウを起動するボタン -->
-            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL2">正解</button><br>
+
             <button id="select_btn2" type="button" class="btn btn-primary" data-modal-title="modal-2">
               回答
             </button><br>
 
-            <div class="modal fade" id="MODAL2">
-              <div class="modal-dialog">
-                <div class="modal-content">
-
-                  <div class="modal-header">
-                      正解：リモートリポジトリとローカルリポジトリ
-                  </div>
-                  <div class="modal-body">
-                    リモートリポジトリ：専用のサーバに配置して複数人で共有するためのリポジトリです。ローカルリポジトリ：ユーザ一人ひとりが利用するために、自分の手元のマシン上に配置するリポジトリです。
-                  </div>
-
-                </div>
-              </div>  
-            </div>  
+            <!-- モーダルウィンドウを起動するボタン -->
+            <label class="ECM_CheckboxInput"><input class="ECM_CheckboxInput-Input" type="checkbox" id="checkElement2" disabled="disabled"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText"></span>正答</label>
             
             <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
@@ -164,26 +157,13 @@
               <option value="value03">開発の中心となるブランチ</option>
               <option value="value04">あるローカルブランチが、履歴を追跡するように設定したリモートブランチ</option>
             </select>
-                <!-- モーダルウィンドウを起動するボタン -->
-            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL3">正解</button><br>
+
             <button id="select_btn3" type="button" class="btn btn-primary" data-modal-title="modal-3">
               回答
             </button><br>
 
-            <div class="modal fade" id="MODAL3">
-              <div class="modal-dialog">
-                <div class="modal-content">
-
-                  <div class="modal-header">
-                      正解：あるローカルブランチが、履歴を追跡するように設定したリモートブランチ
-                  </div>
-                  <div class="modal-body">
-                    「追跡する」とは、そのブランチ上で発生したすべての更新をそのまま取り込む事を前提とする、という意味で、上流ブランチを設定することにより Git 自身もそのような動作をする事になります。Gitでは、リモートにある情報も全てローカルにコピーがある。リモートoriginのmainブランチに対応するブランチはorigin/mainという名前でローカルに保存されている。このブランチを、ローカルのmainブランチの 上流ブランチ(upstream branch) と呼ぶ。
-                  </div>
-
-                </div>
-              </div>  
-            </div>  
+            <!-- モーダルウィンドウを起動するボタン -->
+            <label class="ECM_CheckboxInput"><input class="ECM_CheckboxInput-Input" type="checkbox" id="checkElement3" disabled="disabled"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText"></span>正答</label>
             
             <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
@@ -206,26 +186,13 @@
               <option value="value03">リモートリポジトリの最新の履歴の取得だけを行うコマンド</option>
               <option value="value04">追加・変更したファイルをGitに登録するためのコマンド</option>
             </select>
-                <!-- モーダルウィンドウを起動するボタン -->
-            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL4">正解</button><br>
+
             <button id="select_btn4" type="button" class="btn btn-primary" data-modal-title="modal-4">
               回答
             </button><br>
 
-            <div class="modal fade" id="MODAL4">
-              <div class="modal-dialog">
-                <div class="modal-content">
-
-                  <div class="modal-header">
-                      正解：リモートリポジトリの最新の履歴の取得だけを行うコマンド
-                  </div>
-                  <div class="modal-body">
-                    git pullと同じくリモートリポジトリから最新の状態をローカルに反映するコマンドなのですが、反映先がアップストリームブランチとなります。また、git mergeはアップストリームブランチからローカルブランチを更新するコマンドとなります。単にリモートリポジトリの内容を確認したいだけの時はマージをしたくない場合もあります。そのような時はfetchを使用します。
-                  </div>
-
-                </div>
-              </div>  
-            </div>  
+            <!-- モーダルウィンドウを起動するボタン -->
+            <label class="ECM_CheckboxInput"><input class="ECM_CheckboxInput-Input" type="checkbox" id="checkElement4" disabled="disabled"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText"></span>正答</label>
             
             <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
@@ -248,26 +215,13 @@
               <option value="value03">今作業しているブランチから退出して、新たに他の作業ブランチで作業をしたい場合に使用するためのコマンド</option>
               <option value="value04">ファイルを削除するためのコマンド</option>
             </select>
-                <!-- モーダルウィンドウを起動するボタン -->
-            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MODAL5">正解</button><br>
+
             <button id="select_btn5" type="button" class="btn btn-primary" data-modal-title="modal-5">
               回答
             </button><br>
 
-            <div class="modal fade" id="MODAL5">
-              <div class="modal-dialog">
-                <div class="modal-content">
-
-                  <div class="modal-header">
-                      正解：今作業しているブランチから退出して、新たに他の作業ブランチで作業をしたい場合に使用するためのコマンド
-                  </div>
-                  <div class="modal-body">
-                    「git branch Aブランチ」でAブランチへチェックアウトすることができる。
-                  </div>
-
-                </div>
-              </div>  
-            </div>  
+            <!-- モーダルウィンドウを起動するボタン -->
+            <label class="ECM_CheckboxInput"><input class="ECM_CheckboxInput-Input" type="checkbox" id="checkElement5" disabled="disabled"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText"></span>正答</label>
             
             <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
@@ -280,11 +234,364 @@
                   </div>
                 </div>
               </div>
-            </div>          
+            </div>
+          
+            <h4>テスト6</h4>
+            <p>|q6|</p>
+            <select id="select06">
+              <option value="value01">|sa6|</option>
+              <option value="value02">|sb6|</option>
+              <option value="value03">|sc6|</option>
+              <option value="value04">|sd6|</option>
+            </select>
+
+            <button id="select_btn6" type="button" class="btn btn-primary" data-modal-title="modal-6">
+              回答
+            </button><br>
+
+            <!-- モーダルウィンドウを起動するボタン -->
+            <label class="ECM_CheckboxInput"><input class="ECM_CheckboxInput-Input" type="checkbox" id="checkElement6" disabled="disabled"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText"></span>正答</label>
+            
+            <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel6">Modal title</h5>
+                  </div>
+                  <div class="modal-body" id="exampleModalBody6">
+                    ...
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <h4>テスト7</h4>
+            <p>|q7|</p>
+            <select id="select07">
+              <option value="value01">|sa7|</option>
+              <option value="value02">|sb7|</option>
+              <option value="value03">|sc7|</option>
+              <option value="value04">|sd7|</option>
+            </select>
+
+            <button id="select_btn7" type="button" class="btn btn-primary" data-modal-title="modal-7">
+              回答
+            </button><br>
+
+            <!-- モーダルウィンドウを起動するボタン -->
+            <label class="ECM_CheckboxInput"><input class="ECM_CheckboxInput-Input" type="checkbox" id="checkElement7" disabled="disabled"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText"></span>正答</label>
+            
+            <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel7">Modal title</h5>
+                  </div>
+                  <div class="modal-body" id="exampleModalBody7">
+                    ...
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <h4>テスト8</h4>
+            <p>|q8|</p>
+            <select id="select08">
+              <option value="value01">|sa8|</option>
+              <option value="value02">|sb8|</option>
+              <option value="value03">|sc8|</option>
+              <option value="value04">|sd8|</option>
+            </select>
+
+            <button id="select_btn8" type="button" class="btn btn-primary" data-modal-title="modal-8">
+              回答
+            </button><br>
+
+            <!-- モーダルウィンドウを起動するボタン -->
+            <label class="ECM_CheckboxInput"><input class="ECM_CheckboxInput-Input" type="checkbox" id="checkElement8" disabled="disabled"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText"></span>正答</label>
+            
+            <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel8">Modal title</h5>
+                  </div>
+                  <div class="modal-body" id="exampleModalBody8">
+                    ...
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <h4>テスト9</h4>
+            <p>|q9|</p>
+            <select id="select09">
+              <option value="value01">|sa9|</option>
+              <option value="value02">|sb9|</option>
+              <option value="value03">|sc9|</option>
+              <option value="value04">|sd9|</option>
+            </select>
+
+            <button id="select_btn9" type="button" class="btn btn-primary" data-modal-title="modal-9">
+              回答
+            </button><br>
+
+            <!-- モーダルウィンドウを起動するボタン -->
+            <label class="ECM_CheckboxInput"><input class="ECM_CheckboxInput-Input" type="checkbox" id="checkElement9" disabled="disabled"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText"></span>正答</label>
+            
+            <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel9">Modal title</h5>
+                  </div>
+                  <div class="modal-body" id="exampleModalBody9">
+                    ...
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <h4>テスト10</h4>
+            <p>|q10|</p>
+            <select id="select010">
+              <option value="value01">|sa10|</option>
+              <option value="value02">|sb10|</option>
+              <option value="value03">|sc10|</option>
+              <option value="value04">|sd10|</option>
+            </select>
+
+            <button id="select_btn10" type="button" class="btn btn-primary" data-modal-title="modal-10">
+              回答
+            </button><br>
+
+            <!-- モーダルウィンドウを起動するボタン -->
+            <label class="ECM_CheckboxInput"><input class="ECM_CheckboxInput-Input" type="checkbox" id="checkElement10" disabled="disabled"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText"></span>正答</label>
+            
+            <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel10">Modal title</h5>
+                  </div>
+                  <div class="modal-body" id="exampleModalBody10">
+                    ...
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <h4>テスト11</h4>
+            <p>|q11|</p>
+            <select id="select011">
+              <option value="value01">|sa11|</option>
+              <option value="value02">|sb11|</option>
+              <option value="value03">|sc11|</option>
+              <option value="value04">|sd11|</option>
+            </select>
+
+            <button id="select_btn11" type="button" class="btn btn-primary" data-modal-title="modal-11">
+              回答
+            </button><br>
+
+            <!-- モーダルウィンドウを起動するボタン -->
+            <label class="ECM_CheckboxInput"><input class="ECM_CheckboxInput-Input" type="checkbox" id="checkElement11" disabled="disabled"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText"></span>正答</label>
+            
+            <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel11">Modal title</h5>
+                  </div>
+                  <div class="modal-body" id="exampleModalBody11">
+                    ...
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <h4>テスト12</h4>
+            <p>|q12|</p>
+            <select id="select012">
+              <option value="value01">|sa12|</option>
+              <option value="value02">|sb12|</option>
+              <option value="value03">|sc12|</option>
+              <option value="value04">|sd12|</option>
+            </select>
+
+            <button id="select_btn12" type="button" class="btn btn-primary" data-modal-title="modal-12">
+              回答
+            </button><br>
+
+            <!-- モーダルウィンドウを起動するボタン -->
+            <label class="ECM_CheckboxInput"><input class="ECM_CheckboxInput-Input" type="checkbox" id="checkElement12" disabled="disabled"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText"></span>正答</label>
+            
+            <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel12">Modal title</h5>
+                  </div>
+                  <div class="modal-body" id="exampleModalBody12">
+                    ...
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <h4>テスト13</h4>
+            <p>|q13|</p>
+            <select id="select013">
+              <option value="value01">|sa13|</option>
+              <option value="value02">|sb13|</option>
+              <option value="value03">|sc13|</option>
+              <option value="value04">|sd13|</option>
+            </select>
+
+            <button id="select_btn13" type="button" class="btn btn-primary" data-modal-title="modal-13">
+              回答
+            </button><br>
+
+            <!-- モーダルウィンドウを起動するボタン -->
+            <label class="ECM_CheckboxInput"><input class="ECM_CheckboxInput-Input" type="checkbox" id="checkElement13" disabled="disabled"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText"></span>正答</label>
+            
+            <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel13">Modal title</h5>
+                  </div>
+                  <div class="modal-body" id="exampleModalBody13">
+                    ...
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="modal fade" id="exampleModalCntDwn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabelCntDwn">Modal title</h5>
+                  </div>
+                  <div class="modal-body" id="exampleModalBodyCntDwn">
+                    ...
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
     </div>
   </div>
+  
   <script>
+  let myModalCntDwn = new bootstrap.Modal(document.getElementById('exampleModalCntDwn'), {})
+  let btnCntDwn = document.getElementById("select_btn_cnt_dwn")
+  let elementCntDwn = document.getElementById("selectCntDwn")
+  let modalTitleCntDwn = document.getElementById('exampleModalLabelCntDwn')
+  let modalBodyCntDwn = document.getElementById('exampleModalBodyCntDwn')
+  let selectedValueCntDwn = $('#selectCntDwn option:selected').text();
+  // 要調整
+  let totalScore = 5;
+  let scoreCnt = 0;
+
+  //即時関数
+  (function () {
+  let timer = document.getElementById('timer');
+  let start = document.getElementById('start');
+
+  // スタートタイムを押した時の時間を入れる変数
+  let startTime;
+  let diff = 0;
+
+  // 残り時間を計算するための変数
+  let timeLeft;
+
+  // 現在時刻と表示形式を合わせるために * 1000
+  let timeToCountDown = 60000;
+
+  // clearTimeoutメソッドを使いたいので、その時用に変数定義
+  let timerId;
+
+  // カウントダウンの状態を管理できるようにする
+  let isRunning = false;
+
+  // 要素を取得
+  const minutes = document.getElementById('minutes');
+  const seconds = document.getElementById('seconds');
+
+  // 残り時間を表示するために、ミリ秒を渡すと、分や秒に直してくれる関数
+  function updateTimer(t) {
+
+    // 引数として渡されたtでデータオブジェクトを作りたいので変数dという変数名で作ってみる
+    let d = new Date(t);
+    let m = d.getMinutes();
+    let s = d.getSeconds();
+
+    // 取得した時間をDOMに追加
+    minutes.innerText = m < 10 ? '0' + m : m;
+    seconds.innerText = s < 10 ? '0' + s : s;
+  }
+
+
+  function countDown() {
+
+    // 10ミリ秒後に実行する
+    timerId = setTimeout(function () {
+
+        // 残り時間 = カウントされる時間 - 現在時刻
+        timeLeft = timeToCountDown - (Date.now() - startTime);
+
+        // 残り時間が0になった時の処理
+        if (timeLeft < 0) {
+            isRunning = false;
+            start.textContent = 'スタート';
+            clearTimeout(timerId);
+            timeLeft = 0;
+
+            timeToCountDown = 0;
+
+            modalTitleCntDwn.textContent = "時間切れ"
+            modalBodyCntDwn.textContent = `全${totalScore}問中${scoreCnt}問正解！`
+            myModalCntDwn.show()
+            updateTimer(timeLeft);
+
+            return;
+        }
+
+        // countDownを再帰的に呼び出すために記述
+        updateTimer(timeLeft)
+        countDown();
+
+    }, 10);
+  }
+
+  // スタートを押したときの処理
+  start.addEventListener('click', function () {
+
+  if (isRunning === false) {
+      isRunning = true;
+
+      start.textContent = 'ストップ';
+      
+      startTime = Date.now();
+
+      // カウントダウンの機能は再帰的に実行
+      countDown();
+  } else {
+      isRunning = false;
+
+      // 表記をStartに戻す
+      start.textContent = 'スタート';
+
+      // この時点のtimeLeftで更新してあげる
+      timeToCountDown = timeLeft;
+
+      // カウントを止めたいのでclearTimeoutする
+      clearTimeout(timerId);
+  }
+  });
+})();
   
     let myModal1 = new bootstrap.Modal(document.getElementById('exampleModal1'), {})
     let btn1 = document.getElementById("select_btn1")
@@ -321,6 +628,62 @@
     let modalBody5 = document.getElementById('exampleModalBody5')
     let selectedValue5 = $('#select05 option:selected').text();
   
+    let myModal6 = new bootstrap.Modal(document.getElementById('exampleModal6'), {})
+    let btn6 = document.getElementById("select_btn6")
+    let element6 = document.getElementById("select06")
+    let modalTitle6 = document.getElementById('exampleModalLabel6')
+    let modalBody6 = document.getElementById('exampleModalBody6')
+    let selectedValue6 = $('#select06 option:selected').text();
+  
+    let myModal7 = new bootstrap.Modal(document.getElementById('exampleModal7'), {})
+    let btn7 = document.getElementById("select_btn7")
+    let element7 = document.getElementById("select07")
+    let modalTitle7 = document.getElementById('exampleModalLabel7')
+    let modalBody7 = document.getElementById('exampleModalBody7')
+    let selectedValue7 = $('#select07 option:selected').text();
+  
+    let myModal8 = new bootstrap.Modal(document.getElementById('exampleModal8'), {})
+    let btn8 = document.getElementById("select_btn8")
+    let element8 = document.getElementById("select08")
+    let modalTitle8 = document.getElementById('exampleModalLabel8')
+    let modalBody8 = document.getElementById('exampleModalBody8')
+    let selectedValue8 = $('#select08 option:selected').text();
+  
+    let myModal9 = new bootstrap.Modal(document.getElementById('exampleModal9'), {})
+    let btn9 = document.getElementById("select_btn9")
+    let element9 = document.getElementById("select09")
+    let modalTitle9 = document.getElementById('exampleModalLabel9')
+    let modalBody9 = document.getElementById('exampleModalBody9')
+    let selectedValue9 = $('#select09 option:selected').text();
+  
+    let myModal10 = new bootstrap.Modal(document.getElementById('exampleModal10'), {})
+    let btn10 = document.getElementById("select_btn10")
+    let element10 = document.getElementById("select010")
+    let modalTitle10 = document.getElementById('exampleModalLabel10')
+    let modalBody10 = document.getElementById('exampleModalBody10')
+    let selectedValue10 = $('#select010 option:selected').text();
+  
+    let myModal11 = new bootstrap.Modal(document.getElementById('exampleModal11'), {})
+    let btn11 = document.getElementById("select_btn11")
+    let element11 = document.getElementById("select011")
+    let modalTitle11 = document.getElementById('exampleModalLabel11')
+    let modalBody11 = document.getElementById('exampleModalBody11')
+    let selectedValue11 = $('#select011 option:selected').text();
+  
+    let myModal12 = new bootstrap.Modal(document.getElementById('exampleModal12'), {})
+    let btn12 = document.getElementById("select_btn12")
+    let element12 = document.getElementById("select012")
+    let modalTitle12 = document.getElementById('exampleModalLabel12')
+    let modalBody12 = document.getElementById('exampleModalBody12')
+    let selectedValue12 = $('#select012 option:selected').text();
+  
+    let myModal13 = new bootstrap.Modal(document.getElementById('exampleModal13'), {})
+    let btn13 = document.getElementById("select_btn13")
+    let element13 = document.getElementById("select013")
+    let modalTitle13 = document.getElementById('exampleModalLabel13')
+    let modalBody13 = document.getElementById('exampleModalBody13')
+    let selectedValue13 = $('#select013 option:selected').text();
+  
   
     $('#select01').change(function() {
       console.log("changed value" + $('#select01 option:selected').text())
@@ -330,9 +693,17 @@
       if (selectedValue1 === "ファイルやディレクトリの状態を記録する場所") {
         modalTitle1.textContent = "正解！"
         modalBody1.textContent = "リポジトリとは、ファイルやディレクトリの状態を記録する場所です。保存された状態は、内容の変更履歴として格納されています。変更履歴を管理したいディレクトリをリポジトリの管理下に置くことで、そのディレクトリ内のファイルやディレクトリの変更履歴を記録することができます。"
+        checkElement1.disabled = false;
+        checkElement1.checked = true;
+        checkElement1.disabled = true;
+        scoreCnt += 1;
       } else {
         modalTitle1.textContent = "不正解！"
         modalBody1.textContent = ""
+        checkElement1.disabled = false;
+        checkElement1.checked = false;
+        checkElement1.disabled = true;
+        scoreCnt -= 1;
       }
       myModal1.show()
     })
@@ -345,9 +716,17 @@
       if (selectedValue2 === "リモートリポジトリとローカルリポジトリ") {
         modalTitle2.textContent = "正解！"
         modalBody2.textContent = "リモートリポジトリ：専用のサーバに配置して複数人で共有するためのリポジトリです。ローカルリポジトリ：ユーザ一人ひとりが利用するために、自分の手元のマシン上に配置するリポジトリです。"
+        checkElement2.disabled = false;
+        checkElement2.checked = true;
+        checkElement2.disabled = true;
+        scoreCnt += 1;
       } else {
         modalTitle2.textContent = "不正解！"
         modalBody2.textContent = ""
+        checkElement2.disabled = false;
+        checkElement2.checked = false;
+        checkElement2.disabled = true;
+        scoreCnt -= 1;
       }
       myModal2.show()
     })
@@ -360,9 +739,17 @@
       if (selectedValue3 === "あるローカルブランチが、履歴を追跡するように設定したリモートブランチ") {
         modalTitle3.textContent = "正解！"
         modalBody3.textContent = "「追跡する」とは、そのブランチ上で発生したすべての更新をそのまま取り込む事を前提とする、という意味で、上流ブランチを設定することにより Git 自身もそのような動作をする事になります。Gitでは、リモートにある情報も全てローカルにコピーがある。リモートoriginのmainブランチに対応するブランチはorigin/mainという名前でローカルに保存されている。このブランチを、ローカルのmainブランチの 上流ブランチ(upstream branch) と呼ぶ。"
+        checkElement3.disabled = false;
+        checkElement3.checked = true;
+        checkElement3.disabled = true;
+        scoreCnt += 1;
       } else {
         modalTitle3.textContent = "不正解！"
         modalBody3.textContent = ""
+        checkElement3.disabled = false;
+        checkElement3.checked = false;
+        checkElement3.disabled = true;
+        scoreCnt -= 1;
       }
       myModal3.show()
     })
@@ -375,9 +762,17 @@
       if (selectedValue4 === "リモートリポジトリの最新の履歴の取得だけを行うコマンド") {
         modalTitle4.textContent = "正解！"
         modalBody4.textContent = "git pullと同じくリモートリポジトリから最新の状態をローカルに反映するコマンドなのですが、反映先がアップストリームブランチとなります。また、git mergeはアップストリームブランチからローカルブランチを更新するコマンドとなります。単にリモートリポジトリの内容を確認したいだけの時はマージをしたくない場合もあります。そのような時はfetchを使用します。"
+        checkElement4.disabled = false;
+        checkElement4.checked = true;
+        checkElement4.disabled = true;
+        scoreCnt += 1;
       } else {
         modalTitle4.textContent = "不正解！"
         modalBody4.textContent = ""
+        checkElement4.disabled = false;
+        checkElement4.checked = false;
+        checkElement4.disabled = true;
+        scoreCnt -= 1;
       }
       myModal4.show()
     })
@@ -390,12 +785,204 @@
       if (selectedValue5 === "今作業しているブランチから退出して、新たに他の作業ブランチで作業をしたい場合に使用するためのコマンド") {
         modalTitle5.textContent = "正解！"
         modalBody5.textContent = "「git branch Aブランチ」でAブランチへチェックアウトすることができる。"
+        checkElement5.disabled = false;
+        checkElement5.checked = true;
+        checkElement5.disabled = true;
+        scoreCnt += 1;
       } else {
         modalTitle5.textContent = "不正解！"
         modalBody5.textContent = ""
+        checkElement5.disabled = false;
+        checkElement5.checked = false;
+        checkElement5.disabled = true;
+        scoreCnt -= 1;
       }
       myModal5.show()
     })
   
+    $('#select06').change(function() {
+      console.log("changed value" + $('#select06 option:selected').text())
+      selectedValue6 = $('#select06 option:selected').text();
+    })
+    btn6.addEventListener('click', (e) => {
+      if (selectedValue6 === "|a6|") {
+        modalTitle6.textContent = "正解！"
+        modalBody6.textContent = "|a_des6|"
+        checkElement6.disabled = false;
+        checkElement6.checked = true;
+        checkElement6.disabled = true;
+        scoreCnt += 1;
+      } else {
+        modalTitle6.textContent = "不正解！"
+        modalBody6.textContent = ""
+        checkElement6.disabled = false;
+        checkElement6.checked = false;
+        checkElement6.disabled = true;
+        scoreCnt -= 1;
+      }
+      myModal6.show()
+    })
+  
+    $('#select07').change(function() {
+      console.log("changed value" + $('#select07 option:selected').text())
+      selectedValue7 = $('#select07 option:selected').text();
+    })
+    btn7.addEventListener('click', (e) => {
+      if (selectedValue7 === "|a7|") {
+        modalTitle7.textContent = "正解！"
+        modalBody7.textContent = "|a_des7|"
+        checkElement7.disabled = false;
+        checkElement7.checked = true;
+        checkElement7.disabled = true;
+        scoreCnt += 1;
+      } else {
+        modalTitle7.textContent = "不正解！"
+        modalBody7.textContent = ""
+        checkElement7.disabled = false;
+        checkElement7.checked = false;
+        checkElement7.disabled = true;
+        scoreCnt -= 1;
+      }
+      myModal7.show()
+    })
+  
+    $('#select08').change(function() {
+      console.log("changed value" + $('#select08 option:selected').text())
+      selectedValue8 = $('#select08 option:selected').text();
+    })
+    btn8.addEventListener('click', (e) => {
+      if (selectedValue8 === "|a8|") {
+        modalTitle8.textContent = "正解！"
+        modalBody8.textContent = "|a_des8|"
+        checkElement8.disabled = false;
+        checkElement8.checked = true;
+        checkElement8.disabled = true;
+        scoreCnt += 1;
+      } else {
+        modalTitle8.textContent = "不正解！"
+        modalBody8.textContent = ""
+        checkElement8.disabled = false;
+        checkElement8.checked = false;
+        checkElement8.disabled = true;
+        scoreCnt -= 1;
+      }
+      myModal8.show()
+    })
+  
+    $('#select09').change(function() {
+      console.log("changed value" + $('#select09 option:selected').text())
+      selectedValue9 = $('#select09 option:selected').text();
+    })
+    btn9.addEventListener('click', (e) => {
+      if (selectedValue9 === "|a9|") {
+        modalTitle9.textContent = "正解！"
+        modalBody9.textContent = "|a_des9|"
+        checkElement9.disabled = false;
+        checkElement9.checked = true;
+        checkElement9.disabled = true;
+        scoreCnt += 1;
+      } else {
+        modalTitle9.textContent = "不正解！"
+        modalBody9.textContent = ""
+        checkElement9.disabled = false;
+        checkElement9.checked = false;
+        checkElement9.disabled = true;
+        scoreCnt -= 1;
+      }
+      myModal9.show()
+    })
+  
+    $('#select010').change(function() {
+      console.log("changed value" + $('#select010 option:selected').text())
+      selectedValue10 = $('#select010 option:selected').text();
+    })
+    btn10.addEventListener('click', (e) => {
+      if (selectedValue10 === "|a10|") {
+        modalTitle10.textContent = "正解！"
+        modalBody10.textContent = "|a_des10|"
+        checkElement10.disabled = false;
+        checkElement10.checked = true;
+        checkElement10.disabled = true;
+        scoreCnt += 1;
+      } else {
+        modalTitle10.textContent = "不正解！"
+        modalBody10.textContent = ""
+        checkElement10.disabled = false;
+        checkElement10.checked = false;
+        checkElement10.disabled = true;
+        scoreCnt -= 1;
+      }
+      myModal10.show()
+    })
+  
+    $('#select011').change(function() {
+      console.log("changed value" + $('#select011 option:selected').text())
+      selectedValue11 = $('#select011 option:selected').text();
+    })
+    btn11.addEventListener('click', (e) => {
+      if (selectedValue11 === "|a11|") {
+        modalTitle11.textContent = "正解！"
+        modalBody11.textContent = "|a_des11|"
+        checkElement11.disabled = false;
+        checkElement11.checked = true;
+        checkElement11.disabled = true;
+        scoreCnt += 1;
+      } else {
+        modalTitle11.textContent = "不正解！"
+        modalBody11.textContent = ""
+        checkElement11.disabled = false;
+        checkElement11.checked = false;
+        checkElement11.disabled = true;
+        scoreCnt -= 1;
+      }
+      myModal11.show()
+    })
+  
+    $('#select012').change(function() {
+      console.log("changed value" + $('#select012 option:selected').text())
+      selectedValue12 = $('#select012 option:selected').text();
+    })
+    btn12.addEventListener('click', (e) => {
+      if (selectedValue12 === "|a12|") {
+        modalTitle12.textContent = "正解！"
+        modalBody12.textContent = "|a_des12|"
+        checkElement12.disabled = false;
+        checkElement12.checked = true;
+        checkElement12.disabled = true;
+        scoreCnt += 1;
+      } else {
+        modalTitle12.textContent = "不正解！"
+        modalBody12.textContent = ""
+        checkElement12.disabled = false;
+        checkElement12.checked = false;
+        checkElement12.disabled = true;
+        scoreCnt -= 1;
+      }
+      myModal12.show()
+    })
+  
+    $('#select013').change(function() {
+      console.log("changed value" + $('#select013 option:selected').text())
+      selectedValue13 = $('#select013 option:selected').text();
+    })
+    btn13.addEventListener('click', (e) => {
+      if (selectedValue13 === "|a13|") {
+        modalTitle13.textContent = "正解！"
+        modalBody13.textContent = "|a_des13|"
+        checkElement13.disabled = false;
+        checkElement13.checked = true;
+        checkElement13.disabled = true;
+        scoreCnt += 1;
+      } else {
+        modalTitle13.textContent = "不正解！"
+        modalBody13.textContent = ""
+        checkElement13.disabled = false;
+        checkElement13.checked = false;
+        checkElement13.disabled = true;
+        scoreCnt -= 1;
+      }
+      myModal13.show()
+    })
+  
   </script>
-  </body>
+</body>
