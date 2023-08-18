@@ -13,10 +13,10 @@ def convert_list_elements(my_list, data):
     return converted_list
 
 #文字化けしている可能性がある為、learn_git_tests_one_template.htmlは要確認
-html = open('../templates/myapp/learn_git_tests_one_template.html')
+html = open('../templates/myapp/learn_react_tests_one_template.html')
 html_read = html.read()
 template = Template(html_read)
-with open('../templates/myapp/learn_git_tests_one.yaml') as file:
+with open('../templates/myapp/learn_react_tests_one.yaml') as file:
     obj = yaml.safe_load(file)
 # print(obj['array'][0])
 base_data = {}
@@ -42,7 +42,7 @@ out = template.render(base_data)
 print(out)
 results = convert_list_elements(out, base_data)
 print(results)
-with open("../templates/myapp/learn_git_tests_one.html", "w") as f:
+with open("../templates/myapp/learn_react_tests_one.html", "w") as f:
     f.write(results)
 
 print("書き込みが完了しました")

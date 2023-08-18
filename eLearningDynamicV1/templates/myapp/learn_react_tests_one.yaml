@@ -1,0 +1,36 @@
+array: 
+- q: Reactとは、WebサイトやWebアプリのUI部分を開発する際に活用するxxxxライブラリです。xxxxに入る言語は何か？
+  sa: Javascript
+  sb: HTML
+  sc: CSS
+  sd: SCSS
+  a: Javascript
+  a_des: Reactとは、WebサイトやWebアプリのUI部分を開発する際に活用するJavaScriptライブラリです。ReactはReact.js（React.JS）と表記されることもあります。
+- q: SPA（Single Page Application）が注目されるようになった背景は何があるか？
+  sa: サーバーの冗長性を保証できるようになったこと
+  sb: 役割ごとに独立しているため、作業区分も明確化され、並列開発ができる開発効率が向上するのはもちろんのこと、保守性も高められること
+  sc: サーバーのレスポンスを待つことなく画面遷移を実施することができること
+  sd: 通常は作業に手間がかかるデータベースのクラスター化やレプリケーションを自動で行ってくれること
+  a: サーバーのレスポンスを待つことなく画面遷移を実施することができること
+  a_des: 2番目の回答は、MVCモデルの説明、4番目の回答は、Amazon Auroraの説明です。
+- q: JSXの特徴として正しいものを選べ
+  sa: Javascriptの拡張構文であり、Javascript上でHTMLを扱うことのできる構文のこと
+  sb: ウェブブラウザ内で非同期通信を行いながらインターフェイスの構築を行うプログラミング手法のこと
+  sc: マークアップがなされたリソース（Document）をリソース要素（Object）の木構造（Model）で表現し操作可能にする仕組み
+  sd: Javaプラットフォーム向けのオープンソースアプリケーションフレームワーク
+  a: Javascriptの拡張構文であり、Javascript上でHTMLを扱うことのできる構文のこと
+  a_des: 2番目の回答は、Ajaxの説明、3番目の回答は、DOMの説明です。
+- q: 
+  sa: 
+  sb: 
+  sc: 
+  sd: 
+  a: 
+  a_des: 
+- q: 
+  sa: 
+  sb: 
+  sc: 
+  sd: 
+  a: 
+  a_des: 
