@@ -14,7 +14,7 @@ html_product = '../templates/myapp/learn_react_contents_one.html'
 
 open_template = open(html_template)
 read_template = open_template.read()
-processing_template = Template(read_template)
+process_template = Template(read_template)
 
 with open(yaml_contents) as open_yaml:
     load_yaml = yaml.safe_load(open_yaml)
@@ -28,10 +28,10 @@ for section_cnt in range(len(load_yaml['array'])):
         section_data = {
         title+str(section_num) : description,
         }
-
         collect_data = {**collect_data, **section_data}
+
 print(collect_data)
-render_template = processing_template.render(collect_data)
+render_template = process_template.render(collect_data)
 print(render_template)
 results = convert_list_elements(render_template, collect_data)
 print(results)
