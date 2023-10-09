@@ -8,35 +8,34 @@ def convert_list_elements(my_list, data):
     # converted_list.append(converted_item)
     return converted_list
 
-html = open('../templates/myapp/learn_react_contents_one_template.html')
-html_read = html.read()
-template = Template(html_read)
-with open('../templates/myapp/learn_react_contents_one.yaml') as file:
-    obj = yaml.safe_load(file)
-# print(obj['array'][0])
-base_data = {}
-for num in range(len(obj['array'])):
-    print("num:"+str(num))
-    for k, v in obj['array'][num].items():
-        e = num+1
-        print(k+str(e))
-        data = {
-        k+str(num+1) : v,
-        # 's1-'+str(num) : question['s1'],
-        # 's2-'+str(num) : question['s2'],
-        # 's3-'+str(num) : question['s3'],
-        # 's4-'+str(num) : question['s4'],
-        # 'a-'+str(num) : question['a'],
-        # 'a_des-'+str(num) : question['a_des'],
+html_template = '../templates/myapp/learn_react_contents_one_template.html'
+yaml_contents = '../templates/myapp/learn_react_contents_one.yaml'
+html_product = '../templates/myapp/learn_react_contents_one.html'
+
+open_template = open(html_template)
+read_template = open_template.read()
+processing_template = Template(read_template)
+
+with open(yaml_contents) as open_yaml:
+    load_yaml = yaml.safe_load(open_yaml)
+    
+collect_data = {}
+for section_cnt in range(len(load_yaml['array'])):
+    print("num:"+str(section_cnt))
+    for title, description in load_yaml['array'][section_cnt].items():
+        section_num = section_cnt + 1
+        print(title+str(section_num))
+        section_data = {
+        title+str(section_num) : description,
         }
 
-        base_data = {**base_data, **data}
-print(base_data)
-out = template.render(base_data)
-print(out)
-results = convert_list_elements(out, base_data)
+        collect_data = {**collect_data, **section_data}
+print(collect_data)
+render_template = processing_template.render(collect_data)
+print(render_template)
+results = convert_list_elements(render_template, collect_data)
 print(results)
-with open("../templates/myapp/learn_react_contents_one.html", "w") as f:
+with open(html_product, "w") as f:
     f.write(results)
 
 print("書き込みが完了しました")
