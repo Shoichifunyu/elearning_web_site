@@ -8,10 +8,10 @@ def convert_list_elements(my_list, data):
     # converted_list.append(converted_item)
     return converted_list
 
-html = open('../templates/myapp/learn_git_contents_one_template.html')
+html = open('../templates/myapp/learn_react_contents_one_template.html')
 html_read = html.read()
 template = Template(html_read)
-with open('../templates/myapp/learn_git_contents.yaml') as file:
+with open('../templates/myapp/learn_react_contents_one.yaml') as file:
     obj = yaml.safe_load(file)
 # print(obj['array'][0])
 base_data = {}
@@ -36,7 +36,7 @@ out = template.render(base_data)
 print(out)
 results = convert_list_elements(out, base_data)
 print(results)
-with open("../templates/myapp/learn_git_contents_one.html", "w") as f:
+with open("../templates/myapp/learn_react_contents_one.html", "w") as f:
     f.write(results)
 
 print("書き込みが完了しました")
