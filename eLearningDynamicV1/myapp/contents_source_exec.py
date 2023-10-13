@@ -42,9 +42,9 @@ def make_html_file(generated_html_contents, html_product):
     print("書き込みが完了しました")
 
 if __name__ == '__main__':
-    html_template = '../templates/myapp/learn_react_contents_one_template.html'
-    yaml_contents = '../templates/myapp/learn_react_contents_one.yaml'
-    html_product = '../templates/myapp/learn_react_contents_one.html'
+    html_template = '../templates/myapp/learn_git_contents_one_template.html'
+    yaml_contents = '../templates/myapp/learn_git_contents_one.yaml'
+    html_product = '../templates/myapp/learn_git_contents_one.html'
 
     process_template, load_yaml = prepare_generate_html(html_template, yaml_contents)
     generated_html_contents = generate_html_contents(load_yaml, process_template)

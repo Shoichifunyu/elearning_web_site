@@ -35,15 +35,15 @@
         </nav>
         </div>
         <div class="col-md-9">
-            {% set lists = ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"] %}
-            {% for i in lists %}
-            <h2>|topic{{loop.index}}|</h2>
-            <p>|main_topic{{loop.index}}|</p>
-            <p>|question{{loop.index}}|</p>
-            <p>|answer{{loop.index}}|</p>
-            <p>|situation{{loop.index}}|</p>
-            <p>|complex{{loop.index}}|</p>
-            <p>|checking_q_and_a{{loop.index}}|</p>
+            {% set lists_cnt = 10 %}
+            {% for i in range(1, lists_cnt) %}
+            <h2>|topic{{i}}|</h2>
+            <p>|main_topic{{i}}|</p>
+            <p>|question{{i}}|</p>
+            <p>|answer{{i}}|</p>
+            <p>|situation{{i}}|</p>
+            <p>|complex{{i}}|</p>
+            <p>|checking_q_and_a{{i}}|</p>
             {% endfor %}
         </div>
   </body>
