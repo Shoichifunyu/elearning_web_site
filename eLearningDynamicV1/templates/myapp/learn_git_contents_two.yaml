@@ -1,0 +1,85 @@
+array: 
+- topic: Git Rebaseについて
+  main_topic: 仕事でもよく使うGit Rebase。今日はその使い方について考えてみたい。
+  question: まず、改めてGit Rebaseがどういうことをするものかを再確認する。
+  answer: 単純にRebaseがこういうものだ、というのは容易ではない。ケースとしては、作業が二つに分岐（それぞれのブランチに対してコミットされている）状態でブランチを統合する場合を考える。この際、もっとも簡単な方法は、mergeを使うことにある。しかし、別の方法としてrebaseが存在する。どういうことかというと、一方のブランチで行った変更のパッチ（差分を抜き出したデータ）を取得、それをもう一方のスナップショットの先端に適用するといったことだ。
+  situation: この際、変更のパッチを取得される側ではなく、スナップショットの先端に"適用する"側が最新のコミットとなる。
+  complex: 上記の説明から言えることは、「○○(自分の作業ブランチ)を××(origin/master)にリベースする」という表現の○○と××を逆にしてはならないということだ。
+  checking_q_and_a: ○○はあくまでも作業による変更のパッチのみが取得され、メイン(視点)は××にあるということを留意する必要がある。
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
