@@ -24,28 +24,28 @@
                 
                 
                 <li class="nav-item">
-                  <a class="nav-link" href='./learn_git.html'>
+                  <a class="nav-link" href='./learn_aws.html'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
                     <span class="ml-2">目次</span>
                   </a>
                 </li>
                 
                 <li class="nav-item">
-                  <a class="nav-link" href='./learn_git_contents_one.html'>
+                  <a class="nav-link" href='./learn_aws_contents_one.html'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
                     <span class="ml-2">学習①</span>
                   </a>
                 </li>
                 
                 <li class="nav-item">
-                  <a class="nav-link" href='./learn_git_tests_one.html'>
+                  <a class="nav-link" href='./learn_aws_tests_one.html'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
                     <span class="ml-2">テスト①</span>
                   </a>
                 </li>
                 
                 <li class="nav-item">
-                  <a class="nav-link" href='./learn_git_contents_two.html'>
+                  <a class="nav-link" href='./learn_aws_contents_two.html'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
                     <span class="ml-2">学習②</span>
                   </a>
@@ -79,27 +79,27 @@
         <div class="col-md-9">
             
             
-            <h2>Git Rebaseについて</h2>
-            <p>仕事でもよく使うGit Rebase。今日はその使い方について考えてみたい。</p>
-            <p>まず、改めてGit Rebaseがどういうことをするものかを再確認する。</p>
-            <p>単純にRebaseがこういうものだ、というのは容易ではない。ケースとしては、作業が二つに分岐（それぞれのブランチに対してコミットされている）状態でブランチを統合する場合を考える。この際、もっとも簡単な方法は、mergeを使うことにある。しかし、別の方法としてrebaseが存在する。どういうことかというと、一方のブランチで行った変更のパッチ（差分を抜き出したデータ）を取得、それをもう一方のスナップショットの先端に適用するといったことだ。</p>
-            <p>この際、変更のパッチを取得される側ではなく、スナップショットの先端に"適用する"側が最新のコミットとなる。</p>
-            <p>上記の説明から言えることは、「○○(自分の作業ブランチ)を××(origin/master)にリベースする」という表現の○○と××を逆にしてはならないということだ。</p>
-            <p>○○はあくまでも作業による変更のパッチのみが取得され、メイン(視点)は××にあるということを留意する必要がある。</p>
+            <h2>Boto3とは？使うメリットは？</h2>
+            <p>今日は、AWSのサービスの一つであるboto3について、取り上げてみる。</p>
+            <p>まずBoto3、これはいったいどのようなものか？</p>
+            <p>Boto3とは、「AWS SDK for Python」のことで、AWSの各種サービス（Amazon S3、EC2、RDSなど）をPythonから操作するためのライブラリのこと。これはAWSが公式で提供している。</p>
+            <p>例えば、WEBアプリケーションを運用する想定で、VPC内にパブリックサブネットとプライベートサブネットがあり、インターネットゲートウェイ、EC2、RDSがあるシンプルなインフラ環境を、Pythonによるコーディングによって実現可能になる。</p>
+            <p>しかし、こうした機能は、AWSのCloudFormationによってすでに実現可能なように思える。それでもBoto3を使う理由はどこにあるだろうか？</p>
+            <p>一つ考えられるのは、知識やスキルの習得面だろう。CloudFormationはyamlなどを使う一方で、Boto3はpythonでコーディングできることから、開発者ベースでの構築が容易になる点が大きい。（PythonとBoto3を使用して、AWSのインフラ構築を自動化してみた | JIGSAWOPS | https://ops.jig-saw.com/tech-cate/python_boto3_aws）</p>
             
-            <h2></h2>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
+            <h2>ECSとECR</h2>
+            <p>AWSのサービスであるECSとECR。これらの違い及び関係性を理解したい。</p>
+            <p>まずこれらの概要について説明する。</p>
+            <p>ECRは、コンテナイメージのリポジトリのことである。各サーバが実行時に必要なimageをECRに取りに行く感じ。ECSはDockerコンテナを簡単に実行、停止、管理できるサービスのことである。ECSを使うことで、複数のコンテナを統合して管理できる。AWS上でいい感じにdocker pull(ECRから)してdocker runしてくれる感じ。</p>
+            <p>EC2上にdocker engineをインストールして、その上にコンテナを管理するという方法があるが、この場合、コンテナごとにポートを変えないと行けなかったり、コンテナで何かしら不具合起きた際に、sshでログインして原因特定して直して、再起動しないといけなかったりで、何かと人の手が必要になってくる。そこで、ECSを使うことで、上記問題を全て解決できる。</p>
+            <p>上記の説明はそもそもコンテナとは何か？を理解しないと理解が難しい。</p>
+            <p>コンテナとは、アプリケーションを動作させる為に必要な構成やライブラリの依存関係を単一のオブジェクトにパッケージ化することである。（ECS、ECRについて簡単にまとめる | Zenn | https://zenn.dev/ryota_koba04/articles/c616c17d72603c）</p>
             
-            <h2></h2>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
+            <h2>ECRにあるdockerイメージの削除について</h2>
+            <p>先の話で、ECRはECSがDockerコンテナを簡単に実行停止管理するためのイメージをリポジトリとして保管していることが分かった。</p>
+            <p>しかし、業務の手順を見ていた時、要らなくなったdockerイメージは削除する、と書かれておりそれがどういった状態で削除対象とみなせるかが分からなかった。</p>
+            <p>上記で書いた要らなくなったdockerイメージの削除、とはローカルのdockerイメージのことだ。「docker rmi ~~~」というのが該当する。一方でECRにプッシュしたイメージの削除には「aws ecr batch-delete-image~~~」というコマンドを打つ必要がある。</p>
+            <p>つまり、ローカルでdockerのimageをbuild→リモート(ECR)にイメージをpushしているわけだ。だから、要らなくなったローカルのimageは消した方がいい、ということだろう。</p>
             <p></p>
             <p></p>
             

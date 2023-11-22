@@ -1,0 +1,85 @@
+array: 
+- topic: Boto3とは？使うメリットは？
+  main_topic: 今日は、AWSのサービスの一つであるboto3について、取り上げてみる。
+  question: まずBoto3、これはいったいどのようなものか？
+  answer: Boto3とは、「AWS SDK for Python」のことで、AWSの各種サービス（Amazon S3、EC2、RDSなど）をPythonから操作するためのライブラリのこと。これはAWSが公式で提供している。
+  situation: 例えば、WEBアプリケーションを運用する想定で、VPC内にパブリックサブネットとプライベートサブネットがあり、インターネットゲートウェイ、EC2、RDSがあるシンプルなインフラ環境を、Pythonによるコーディングによって実現可能になる。
+  complex: しかし、こうした機能は、AWSのCloudFormationによってすでに実現可能なように思える。それでもBoto3を使う理由はどこにあるだろうか？
+  checking_q_and_a: 一つ考えられるのは、知識やスキルの習得面だろう。CloudFormationはyamlなどを使う一方で、Boto3はpythonでコーディングできることから、開発者ベースでの構築が容易になる点が大きい。（PythonとBoto3を使用して、AWSのインフラ構築を自動化してみた | JIGSAWOPS | https://ops.jig-saw.com/tech-cate/python_boto3_aws）
+- topic: ECSとECR
+  main_topic: AWSのサービスであるECSとECR。これらの違い及び関係性を理解したい。
+  question: まずこれらの概要について説明する。
+  answer: ECRは、コンテナイメージのリポジトリのことである。各サーバが実行時に必要なimageをECRに取りに行く感じ。ECSはDockerコンテナを簡単に実行、停止、管理できるサービスのことである。ECSを使うことで、複数のコンテナを統合して管理できる。AWS上でいい感じにdocker pull(ECRから)してdocker runしてくれる感じ。
+  situation: EC2上にdocker engineをインストールして、その上にコンテナを管理するという方法があるが、この場合、コンテナごとにポートを変えないと行けなかったり、コンテナで何かしら不具合起きた際に、sshでログインして原因特定して直して、再起動しないといけなかったりで、何かと人の手が必要になってくる。そこで、ECSを使うことで、上記問題を全て解決できる。
+  complex: 上記の説明はそもそもコンテナとは何か？を理解しないと理解が難しい。
+  checking_q_and_a: コンテナとは、アプリケーションを動作させる為に必要な構成やライブラリの依存関係を単一のオブジェクトにパッケージ化することである。（ECS、ECRについて簡単にまとめる | Zenn | https://zenn.dev/ryota_koba04/articles/c616c17d72603c）
+- topic: ECRにあるdockerイメージの削除について
+  main_topic: 先の話で、ECRはECSがDockerコンテナを簡単に実行停止管理するためのイメージをリポジトリとして保管していることが分かった。
+  question: しかし、業務の手順を見ていた時、要らなくなったdockerイメージは削除する、と書かれておりそれがどういった状態で削除対象とみなせるかが分からなかった。
+  answer: 上記で書いた要らなくなったdockerイメージの削除、とはローカルのdockerイメージのことだ。「docker rmi ~~~」というのが該当する。一方でECRにプッシュしたイメージの削除には「aws ecr batch-delete-image~~~」というコマンドを打つ必要がある。
+  situation: つまり、ローカルでdockerのimageをbuild→リモート(ECR)にイメージをpushしているわけだ。だから、要らなくなったローカルのimageは消した方がいい、ということだろう。
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 
+- topic: 
+  main_topic: 
+  question: 
+  answer: 
+  situation: 
+  complex: 
+  checking_q_and_a: 

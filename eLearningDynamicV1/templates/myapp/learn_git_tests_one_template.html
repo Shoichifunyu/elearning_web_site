@@ -23,48 +23,15 @@
           </button>
           <div class="collapse navbar-collapse" id="sidebarMenu">
             <ul class="navbar-nav flex-column">
+              {% set chapter_contents = [{"chapter": "目次", "url": "./learn_git.html"}, {"chapter": "学習①", "url": "./learn_git_contents_one.html"}, {"chapter": "テスト①", "url": "./learn_git_tests_one.html"}, {"chapter": "学習②", "url": "./learn_git_contents_two.html"}, {"chapter": "テスト②", "url": "./construction_view.html"}, {"chapter": "学習③", "url": "./construction_view.html"}, {"chapter": "テスト③", "url": "./construction_view.html"}] %}
+              {% for chapter_content in chapter_contents %}
               <li class="nav-item">
-                <a class="nav-link" href="./learn_git.html">
+                <a class="nav-link" href='{{ chapter_content["url"] }}'>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
-                  <span class="ml-2">目次</span>
+                  <span class="ml-2">{{ chapter_content["chapter"] }}</span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./learn_git_contents_one.html">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
-                  <span class="ml-2">学習①</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./learn_git_tests_one.html">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
-                  <span class="ml-2">テスト①</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./learn_git_contents_two.html">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
-                  <span class="ml-2">学習②</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./learn_git_tests_two.html">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
-                  <span class="ml-2">テスト②</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./construction_view.html">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
-                  <span class="ml-2">学習③</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./construction_view.html">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
-                  <span class="ml-2">テスト③</span>
-                </a>
-              </li>
+              {% endfor %}
             </ul>
           </div>
         </nav>
